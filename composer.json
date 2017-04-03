@@ -1,0 +1,31 @@
+{
+    "name": "dlcs/elucidate-php",
+    "description": "Elucidate Annotation Server API for PHP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Elucidate\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Elucidate\\Tests\\": "tests/src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "suggest": {
+        "zendframework/zend-http": "Zend http client for making requests",
+        "guzzlehttp/guzzle": "Guzzle http client for making requests"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "6.2.*",
+        "zendframework/zend-http": "^2.5.4",
+        "phpunit/phpunit": "^5.5"
+    },
+    "require": {
+        "guzzlehttp/psr7": "^1.4",
+        "beberlei/assert": "^2.7"
+    }
+}

@@ -23,7 +23,7 @@ $elucidate = new Elucidate\Client($guzzle);
 $container = $elucidate->createContainer('My first container');
 
 // Create an annotation.
-$annotation = new Eluciadte\Model\Annotation(null, [
+$annotation = new Elucidate\Model\Annotation(null, [
             'type' => 'TextualBody',
             'value' => 'I like this page!'
         ], 'http://www.example.com/index.html');

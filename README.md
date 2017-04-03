@@ -1,4 +1,5 @@
 # Elucidate PHP
+[![Build Status](https://travis-ci.com/digirati-co-uk/elucidate-php.svg?token=a5qCzEBD9SzwsGr2LNL2&branch=master)](https://travis-ci.com/digirati-co-uk/elucidate-php)
 
 ## Installation
 ```

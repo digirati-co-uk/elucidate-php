@@ -13,6 +13,9 @@
         <whitelist>
             <directory>src</directory>
         </whitelist>
+        <blacklist>
+            <directory>tests/src</directory>
+        </blacklist>
     </filter>
     <logging>
         <log type="coverage-clover" target="./clover.xml"/>

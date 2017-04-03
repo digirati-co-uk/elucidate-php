@@ -5,4 +5,4 @@ php:
 script:
   - composer install
   - ./vendor/bin/phpunit
-  - php coverage.php clover.xml 75
+  - php coverage.php clover.xml 50

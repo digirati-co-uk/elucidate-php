@@ -176,13 +176,13 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function test_can_search()
     {
         $this->http->setGet(function ($endpoint) {
-            $this->assertEquals('/search/body?fields%5B0%5D=id&strict=0&value=http%3A%2F%2Fwww.example.com%2Findex.html', $endpoint);
+            $this->assertEquals('search/body?fields=id&strict=0&value=http%3A%2F%2Fwww.example.com%2Findex.html', $endpoint);
             return '{}';
         });
         $this->client->search(new SearchByBody(['id'], 'http://www.example.com/index.html'));
 
         $this->http->setGet(function ($endpoint) {
-            $this->assertEquals('/search/target?fields%5B0%5D=source&value=http%3A%2F%2Fwww.example.com%2Findex.html&strict=0&xyhw=10%2C10%2C10%2C10&t=1', $endpoint);
+            $this->assertEquals('search/target?fields=source&value=http%3A%2F%2Fwww.example.com%2Findex.html&strict=0&xyhw=10%2C10%2C10%2C10&t=1', $endpoint);
             return '{}';
         });
         $this->client->search(new SearchByTarget(['source'], 'http://www.example.com/index.html', false, '10,10,10,10', '1'));

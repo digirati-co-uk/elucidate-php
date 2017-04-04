@@ -5,6 +5,8 @@ use Elucidate\Model\RequestModel;
 
 interface HttpAdapter
 {
+    public function getBaseUri() : string;
+
     public function post(string $endpoint, RequestModel $request) : string;
 
     public function put(string $endpoint, RequestModel $request) : string;

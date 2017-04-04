@@ -61,4 +61,9 @@ class MockHttpAdapter implements HttpAdapter
         $get =  $this->get;
         return $get($endpoint);
     }
+
+    public function getBaseUri(): string
+    {
+        return '/';
+    }
 }

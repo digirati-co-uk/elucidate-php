@@ -9,6 +9,11 @@ class GuzzleHttpAdapter implements HttpAdapter
 {
     private $client;
 
+    public function getBaseUri() : string
+    {
+        return $this->client->getConfig('base_uri');
+    }
+
     public function __construct(Client $client)
     {
         $this->client = $client;

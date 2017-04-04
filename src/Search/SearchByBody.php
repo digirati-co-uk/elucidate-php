@@ -15,13 +15,13 @@ class SearchByBody implements SearchQuery
     {
         Assertion::allInArray($fields, ['id', 'source']);
 
-        $this->fields = $fields;
+        $this->fields = implode($fields, ',');
         $this->value = $value;
         $this->strict = $strict;
     }
 
     public function getPath() : string
     {
-        return '/search/body';
+        return 'search/body';
     }
 }

@@ -23,7 +23,7 @@ class Client
     public function createContainer(Container $container)
     {
         return Container::fromJson(
-            $this->client->post('/', $container)
+            $this->client->post($this->client->getBaseUri(), $container)
         );
     }
 

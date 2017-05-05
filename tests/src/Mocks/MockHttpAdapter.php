@@ -2,7 +2,6 @@
 
 namespace Elucidate\Tests\Mocks;
 
-
 use Elucidate\Adapter\HttpAdapter;
 use Elucidate\Model\RequestModel;
 
@@ -40,25 +39,25 @@ class MockHttpAdapter implements HttpAdapter
 
     public function post(string $endpoint, RequestModel $request): string
     {
-        $post =  $this->post;
+        $post = $this->post;
         return $post($endpoint, $request);
     }
 
     public function put(string $endpoint, RequestModel $request): string
     {
-        $put =  $this->put;
+        $put = $this->put;
         return $put($endpoint, $request);
     }
 
     public function delete(RequestModel $request): bool
     {
-        $delete =  $this->delete;
+        $delete = $this->delete;
         return $delete($request);
     }
 
     public function get(string $endpoint, array $headers = []): string
     {
-        $get =  $this->get;
+        $get = $this->get;
         return $get($endpoint);
     }
 

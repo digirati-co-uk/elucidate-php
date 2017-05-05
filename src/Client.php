@@ -16,7 +16,7 @@ class Client
 
     public function getContainer($idOrContainer) {
         return Container::fromJson(
-            $this->client->get((string) $idOrContainer)
+            $this->client->get((string) $idOrContainer . '/')
         );
     }
 
@@ -30,7 +30,7 @@ class Client
     public function getAnnotation($container, $annotation)
     {
         return Annotation::fromJson(
-            $this->client->get($annotation)
+            $this->client->get($annotation  . '/')
         )->withContainer($container);
     }
 
@@ -41,7 +41,7 @@ class Client
             throw new AnnotationOrphanException();
         }
         return Annotation::fromJson(
-            $this->client->post($container, $annotation)
+            $this->client->post($container . '/', $annotation)
         )->withContainer($container);
     }
 
@@ -52,13 +52,13 @@ class Client
             throw new AnnotationOrphanException();
         }
         return Annotation::fromJson(
-            $this->client->put($annotation, $annotation)
+            $this->client->put($annotation . '/', $annotation)
         )->withContainer($container);
     }
 
-    public function deleteAnnotation(Annotation $annotation) : bool
+    public function deleteAnnotation(Annotation $annotation)
     {
-        return $this->client->delete($annotation);
+        return $this->client->delete($annotation . '/');
     }
 
     public function search(SearchQuery $query)

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Elucidate\Tests\Model;
-
 
 use Elucidate\Model\Container;
 use PHPUnit_Framework_TestCase;

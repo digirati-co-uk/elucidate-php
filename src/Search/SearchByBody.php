@@ -22,6 +22,6 @@ class SearchByBody implements SearchQuery
 
     public function getPath() : string
     {
-        return 'search/body';
+        return 'services/search/body';
     }
 }

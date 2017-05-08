@@ -26,6 +26,6 @@ class SearchByTarget implements SearchQuery
 
     public function getPath() : string
     {
-        return 'search/target';
+        return 'services/search/target';
     }
 }

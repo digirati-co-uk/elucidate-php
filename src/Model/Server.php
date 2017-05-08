@@ -1,4 +1,5 @@
 <?php
+
 namespace Elucidate\Model;
 
 final class Server

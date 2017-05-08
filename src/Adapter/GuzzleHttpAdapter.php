@@ -1,4 +1,5 @@
 <?php
+
 namespace Elucidate\Adapter;
 
 use Elucidate\Model\RequestModel;
@@ -26,7 +27,7 @@ class GuzzleHttpAdapter implements HttpAdapter
 
         $response = $this->client->post($endpoint, [
             'headers' => $headers,
-            'body' => $body
+            'body' => $body,
         ]);
 
         return $response->getBody();
@@ -39,7 +40,7 @@ class GuzzleHttpAdapter implements HttpAdapter
 
         $response = $this->client->put($endpoint, [
             'headers' => $headers,
-            'body' => $body
+            'body' => $body,
         ]);
 
         return $response->getBody();
@@ -51,9 +52,9 @@ class GuzzleHttpAdapter implements HttpAdapter
         $body = json_encode($request);
 
         try {
-            $this->client->delete((string)$request, [
+            $this->client->delete((string) $request, [
                 'headers' => $headers,
-                'body' => $body
+                'body' => $body,
             ]);
         } catch (Exception $e) {
             return false;
@@ -65,7 +66,7 @@ class GuzzleHttpAdapter implements HttpAdapter
     public function get(string $endpoint, array $headers = []): string
     {
         $response = $this->client->get($endpoint, [
-            'headers' => $headers
+            'headers' => $headers,
         ]);
 
         return $response->getBody();

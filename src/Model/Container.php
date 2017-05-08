@@ -1,4 +1,5 @@
 <?php
+
 namespace Elucidate\Model;
 
 use ArrayAccess as ArrayAccessInterface;
@@ -11,8 +12,8 @@ final class Container implements RequestModel, ResponseModel, ArrayAccessInterfa
 
     private $label;
     private $type = [
-        "BasicContainer",
-        "AnnotationCollection"
+        'BasicContainer',
+        'AnnotationCollection',
     ];
     private $id;
 

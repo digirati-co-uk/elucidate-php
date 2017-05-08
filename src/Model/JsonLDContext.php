@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Elucidate\Model;
-
 
 trait JsonLDContext
 {
@@ -10,7 +8,7 @@ trait JsonLDContext
     {
         return [
             'http://www.w3.org/ns/anno.jsonld',
-            'http://www.w3.org/ns/ldp.jsonld'
+            'http://www.w3.org/ns/ldp.jsonld',
         ];
     }
 
@@ -18,7 +16,7 @@ trait JsonLDContext
     {
         return [
             'Accept' => 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"',
-            'Content-Type' => 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"'
+            'Content-Type' => 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"',
         ];
     }
 }

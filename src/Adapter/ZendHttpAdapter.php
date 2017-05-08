@@ -1,4 +1,5 @@
 <?php
+
 namespace Elucidate\Adapter;
 
 use Elucidate\Model\RequestModel;

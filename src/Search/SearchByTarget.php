@@ -1,4 +1,5 @@
 <?php
+
 namespace Elucidate\Search;
 
 use Assert\Assertion;

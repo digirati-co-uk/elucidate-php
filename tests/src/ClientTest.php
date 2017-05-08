@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Elucidate\Tests;
-
 
 use Elucidate\Client;
 use Elucidate\Model\Annotation;
@@ -29,6 +27,7 @@ class ClientTest extends PHPUnit_Framework_TestCase
     {
         $this->http->setPost(function ($endpoint) {
             $this->assertEquals('/', $endpoint);
+
             return '{
             "label": "my new container",
             "type": [
@@ -54,7 +53,8 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function test_can_get_container()
     {
         $this->http->setGet(function ($endpoint) {
-            $this->assertEquals('http://example.org/w3c/123', $endpoint);
+            $this->assertEquals('http://example.org/w3c/123/', $endpoint);
+
             return '{
             "label": "my new container",
             "type": [
@@ -111,7 +111,8 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function test_create_annotation()
     {
         $this->http->setPost(function ($endpoint) {
-            $this->assertEquals('http://example.org/w3c/123', $endpoint);
+            $this->assertEquals('http://example.org/w3c/123/', $endpoint);
+
             return '{
               "@context": "http://www.w3.org/ns/anno.jsonld",
               "id": "http://example.org/w3c/123/456",
@@ -126,7 +127,7 @@ class ClientTest extends PHPUnit_Framework_TestCase
 
         $annotation = new Annotation(null, [
             'type' => 'TextualBody',
-            'value' => 'I like this page! Updated'
+            'value' => 'I like this page! Updated',
         ], 'http://www.example.com/index.html');
         $annotation->withContainer('http://example.org/w3c/123');
 
@@ -138,13 +139,14 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function test_put_annotation()
     {
         $this->http->setPut(function ($endpoint, $annotation) {
-            $this->assertEquals('http://example.org/w3c/123/456', $endpoint);
+            $this->assertEquals('http://example.org/w3c/123/456/', $endpoint);
+
             return json_encode($annotation);
         });
 
         $annotation = new Annotation('http://example.org/w3c/123/456', [
             'type' => 'TextualBody',
-            'value' => 'I like this page! Updated'
+            'value' => 'I like this page! Updated',
         ], 'http://www.example.com/index.html');
 
         $annotation->withContainer('http://example.org/w3c/123');
@@ -159,13 +161,14 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function test_delete_annotation()
     {
         $this->http->setDelete(function ($endpoint) {
-            $this->assertEquals('http://example.org/w3c/123/456', $endpoint);
+            $this->assertEquals('http://example.org/w3c/123/456/', $endpoint);
+
             return true;
         });
 
         $annotation = new Annotation('http://example.org/w3c/123/456', [
             'type' => 'TextualBody',
-            'value' => 'I like this page! Updated'
+            'value' => 'I like this page! Updated',
         ], 'http://www.example.com/index.html');
 
         $true = $this->client->deleteAnnotation($annotation);
@@ -176,13 +179,15 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function test_can_search()
     {
         $this->http->setGet(function ($endpoint) {
-            $this->assertEquals('search/body?fields=id&strict=0&value=http%3A%2F%2Fwww.example.com%2Findex.html', $endpoint);
+            $this->assertEquals('services/search/body?fields=id&strict=0&value=http%3A%2F%2Fwww.example.com%2Findex.html', $endpoint);
+
             return '{}';
         });
         $this->client->search(new SearchByBody(['id'], 'http://www.example.com/index.html'));
 
         $this->http->setGet(function ($endpoint) {
-            $this->assertEquals('search/target?fields=source&value=http%3A%2F%2Fwww.example.com%2Findex.html&strict=0&xyhw=10%2C10%2C10%2C10&t=1', $endpoint);
+            $this->assertEquals('services/search/target?fields=source&value=http%3A%2F%2Fwww.example.com%2Findex.html&strict=0&xyhw=10%2C10%2C10%2C10&t=1', $endpoint);
+
             return '{}';
         });
         $this->client->search(new SearchByTarget(['source'], 'http://www.example.com/index.html', false, '10,10,10,10', '1'));

@@ -30,8 +30,7 @@ class Annotation implements RequestModel, ResponseModel, ArrayAccessInterface
         $creator = null,
         $generator = null,
         Container $container = null
-    )
-    {
+    ) {
         $this->type = 'Annotation';
         $this->body = $body;
         $this->target = $target;
@@ -43,6 +42,6 @@ class Annotation implements RequestModel, ResponseModel, ArrayAccessInterface
 
     public function __toString()
     {
-        return $this->id;
+        return substr($this->id, -1) === '/' ? $this->id : $this->id.'/';
     }
 }

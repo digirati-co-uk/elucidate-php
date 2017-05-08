@@ -1,18 +1,17 @@
 <?php
 
-
 namespace Elucidate\Model;
-
 
 trait SerializeToJsonLD
 {
-    abstract function getContext();
+    abstract public function getContext();
 
     public function jsonSerialize()
     {
         $json = get_object_vars($this);
         unset($json['container']);
         $json['@context'] = $this->getContext();
+
         return $json;
     }
 
@@ -22,6 +21,7 @@ trait SerializeToJsonLD
             $container = new Container(null, $container);
         }
         $this->container = $container;
+
         return $this;
     }
 
@@ -32,6 +32,7 @@ trait SerializeToJsonLD
         foreach ($data as $field => $value) {
             $model->{$field} = $value;
         }
+
         return $model;
     }
 }

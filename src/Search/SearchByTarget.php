@@ -1,4 +1,5 @@
 <?php
+
 namespace Elucidate\Search;
 
 use Assert\Assertion;
@@ -26,6 +27,6 @@ class SearchByTarget implements SearchQuery
 
     public function getPath() : string
     {
-        return 'search/target';
+        return 'services/search/target';
     }
 }

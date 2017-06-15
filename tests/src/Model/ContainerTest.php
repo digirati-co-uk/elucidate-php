@@ -5,6 +5,7 @@ namespace Elucidate\Tests\Model;
 use Elucidate\Model\Annotation;
 use Elucidate\Model\Container;
 use Elucidate\Model\SearchResult;
+use Elucidate\Search\SearchQuery;
 use PHPUnit_Framework_TestCase;
 
 class ContainerTest extends PHPUnit_Framework_TestCase
@@ -77,5 +78,7 @@ class ContainerTest extends PHPUnit_Framework_TestCase
             'https://elucidate.dlcs-ida.org/annotation/w3c/services/search/body?page=1&fields=source&value=https%3A%2F%2Fomeka.dlcs-ida.org&desc=1',
             $search->getNextPage()
         );
+
+        $this->assertInstanceOf(SearchQuery::class, $search->getNextSearchQuery());
     }
 }

@@ -15,6 +15,7 @@
         </whitelist>
         <blacklist>
             <directory>tests/src</directory>
+            <directory>tests/fixtures</directory>
         </blacklist>
     </filter>
     <logging>

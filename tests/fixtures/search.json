@@ -1,0 +1,3436 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://www.w3.org/ns/ldp.jsonld"
+  ],
+  "id": "https://elucidate.dlcs-ida.org/annotation/w3c/services/search/body?fields=source&value=https%3A%2F%2Fomeka.dlcs-ida.org",
+  "type": "AnnotationCollection",
+  "first": {
+    "type": "AnnotationPage",
+    "items": [
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/9cdaf7f962e1f3b65ccf505bffadcbbe/00019873-4396-41b4-b721-e9db169e8d2a",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/1924"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "1924",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1097,1925,102,37"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c16"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/f63b985007ec3a17c6031dacc9b9f4e5/0002ccf1-9734-4c2a-bc85-9527a8e270f1",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Indians",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:norp/indians"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-1148-1160/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1141,1496,172,35"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-1148-1160/canvas/c1156"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/223c0329be1934c0c5b99b377b33e1de/0003aa5d-1261-4ae9-90d0-1d3d1ead542a",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Sacramento",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/sacramento"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=392,523,229,37"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c30"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/da04bba739daeb8d9a53c8604c09a589/0004e303-8520-4e94-8c09-ecca592f46e0",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/interior"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "INTERIOR",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1279,302,276,37"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c35"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/ff3b3187b5af708702b9b6e4781b0963/000b002c-8c61-4d26-bcad-c219167103e2",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/m.+cannon+large+ston"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "M. Cannon Large Ston",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=2283,1208,143,20"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/canvas/6"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=424,1233,153,42"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/canvas/6"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/d453a2b7654429636b05b151df622cb3/000d6ad3-935a-4c7e-be5b-31ef3afe0f6a",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Yauty",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/yauty"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=738,585,76,33"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/canvas/16"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/7efec58501e304d3c70c53de9bd1728e/00160c34-2816-4675-b781-16a44ecd7327",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Macacus silenus.âLacepede",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/macacus+silenus.%c3%a2%c2%80%c2%94lacepede"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=521,1148,656,38"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/canvas/c0.184"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/16ec0874321e3f1dc47af2802c5b06c0/001e801b-486a-41a7-a900-80c7a24d0701",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Bum for",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:WORK_OF_ART",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:work_of_art/bum+for"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1696,1362,176,37"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c102"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/25cb63c62f0edf2ce7227bfc50fe52bc/00202d61-06b4-4b86-aeba-e0519e955dff",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "1908",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/1908"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1528,2413,100,33"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/canvas/c12"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/2357e769c4ca7a9880f8ea40a72775bc/00224245-609c-445c-b5ee-4300c3700fc1",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Holder",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:person/holder"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/427c1f6d-ecc5-4874-96b0-a595fbbb6356/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1194,1125,219,69"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/427c1f6d-ecc5-4874-96b0-a595fbbb6356/canvas/c0.0.5"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/621c3bf33c489f1120cc9bd0a14b1743/0023594f-db7d-40bc-9493-46ad0eedc644",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:norp/indian"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Indian",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1171,793,153,41"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c146"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/0517f3d8eef015a9e547dce3017137fe/0023aeb2-edae-4224-b4f6-9f2ab5eeb96b",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/section+iv----------+industries"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Section IV---------- Industries",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=646,410,828,52"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/canvas/c320"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/d2f7e80c0147778bf1f6cee34a7875c7/002746c9-c514-4da2-a5a8-5fcd3a6a9537",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/date/year"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "year",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1366,643,67,33"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/canvas/c373"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/ca9835214715aca420951c78c27669ac/0028964f-9913-4d22-9fa0-3e7b1a6a920c",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "year",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/year"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1307,1244,233,40"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/canvas/c253"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/1e30949f5b0e630312f33d38e12156e1/0029287f-e8c3-4071-b946-93d29c8a15a6",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/catholic"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Catholic",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=882,1929,198,33"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/canvas/c208"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/6529d1a6cc13e13f53cf5d8f4ef3a98d/00299965-8d70-4cd0-bebf-85c04bfc2d33",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/date/year"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "year",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-30-47/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=363,2535,107,37"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-30-47/canvas/c42"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/5dfb17f45474ec7cefc189a3052f6c52/002a3a66-3bd8-4fdc-ad5c-f9d211321b06",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:EVENT",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "9 11 14",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:event/9+11+14"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=525,2241,80,28"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c1179"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=632,2251,37,30"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c1179"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/d0243f1c062d8ead10212dcf8d724d2b/002a6ee8-1a91-472d-b563-dbcc413d5789",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/80635+1934"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "80635 1934",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-236-298/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=118,439,40,111"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-236-298/canvas/c282"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-236-298/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=190,2557,43,86"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-236-298/canvas/c282"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/99005d021f7690a008fc30c849176cf6/002b62f2-1449-4d0f-a7fa-ca151d657e06",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Indians",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:norp/indians"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_127_cvs-93-153/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1102,2675,172,38"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_127_cvs-93-153/canvas/c141"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/621ccdbaf83b2ad469c255a0d1621649/002bf8e8-f28a-4dd2-be2b-d857d269e36d",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:person/outlook"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Outlook",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-299-343/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=441,974,143,31"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-299-343/canvas/c332"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/9d1e42d0bde34be964163d70df516479/002c5983-c819-4a2f-9af8-32defe21b48b",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/date/year"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "year",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-135-152/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=605,2068,82,36"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-135-152/canvas/c148"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/b2a181566c808531c0c19c594d0afbb8/0032c3aa-4938-4819-b710-ad8665d052e9",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Wakapala",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/wakapala"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1513,2366,229,42"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/canvas/c310"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/7de4351fc8ddf2d77c8f65c7d0e95d81/00337ecd-7a54-4bc4-8cbe-d302019068fb",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Exquina",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:person/exquina"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=735,2108,181,46"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/canvas/c0.277"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/05bc9d4a1f0e26e09d1ec1369bce9b73/0033e2c3-24a4-4a35-9c0c-372302863b46",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/fiscal+year"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "fiscal year",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-153-209/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1121,651,324,36"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-153-209/canvas/c204"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/8f3d7c246c7ddc74d21728e84b19da42/0034767e-4bb9-4683-a268-d9674f418696",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Indians",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:norp/indians"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_127_cvs-93-153/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1501,1123,174,37"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_127_cvs-93-153/canvas/c124"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/6a52feb950907bf17f2b15b0c23c76c0/003ee91a-434a-4790-8bfd-6455b72f1eed",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:person/v.+s.%2c"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "V. S.,",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/a72e7576-8c96-44d5-b164-1133c999c636/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=502,874,74,35"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/a72e7576-8c96-44d5-b164-1133c999c636/canvas/c0.0.2"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/eda9497abd38f041da082d6a7181637c/00433e5b-34b4-45bb-80b2-e7390acb46e9",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/moluccas"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Moluccas",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1161,920,240,54"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/canvas/c0.125"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/a7ead1d87530684c23fe67fc19a83eba/00434e96-f7b4-4594-990e-14099ea3b4c3",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:PRODUCT",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:product/statute"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Statute",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=852,651,97,28"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/canvas/21"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/25cb63c62f0edf2ce7227bfc50fe52bc/0043ce6f-7991-4b27-a32e-654a51d81e73",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/eastern+navajo%28+n.+mex"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Eastern Navajo( N. Mex",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=395,784,509,37"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/canvas/c12"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/9f3f290d2666c567274c4861b0583632/0047c971-e03a-4268-a4f5-37b45d02735c",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Eastern Navaho Agency",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/eastern+navaho+agency"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1213,156,537,42"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c1009"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/35fb34f9600e32f910f8ee58b05c36a6/00489260-d1b6-4c4f-a0f3-033e0e50b113",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "VETERINARY PERIODICAL PUBLICATIONS",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/veterinary+periodical+publications"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/6d6cfc7a-ce87-4512-bf20-80746a3f8e60/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=380,297,847,34"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/6d6cfc7a-ce87-4512-bf20-80746a3f8e60/canvas/c0.0.6"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/f470b225b1e1bcad151f2e7e974f3711/004a01ce-e1c8-4871-8594-3386bc12ea70",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/mp+u+blic"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "MP U BLIC",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=1315,176,147,37"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/canvas/c14"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=1464,181,162,36"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/canvas/c14"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/6c11de417a710f2421c3a0db738c95d3/004a88ed-87d3-4f2a-9f67-85c96a88f623",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/winter+of+1910"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "winter of 1910",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=785,1983,455,47"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c113"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/94379d9b1d852ede2e9ac9288e0d0f3a/004d5472-3cb8-49f3-9dec-9a3818bbc50d",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "1917",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/1917"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1820,846,69,45"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/canvas/c245"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/58a147bf94ae32ea52e3b0f0a73fafc3/004d74bb-98c2-456d-89d8-2759d8898f2e",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/linnaeus"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Linnaeus",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=709,1712,244,53"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/canvas/c0.124"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/083678c0a6baae7d8d183fffccfd6f76/004efdec-5cb2-4213-b7d0-020f52d3a59e",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "year",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/year"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/94c8acb3-98be-4d9d-b650-73c1d4a95c39/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=454,419,115,32"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/94c8acb3-98be-4d9d-b650-73c1d4a95c39/canvas/1"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/c72a4b1b7e02b24e6c16c73985e3b3ca/004fb66f-f300-4f42-a5f3-e01275288dae",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/theat"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Theat",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-941_03_cvs-9-29/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1327,210,75,41"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-941_03_cvs-9-29/canvas/c12"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/79464bedb2c653f3bafc4410da4fbf30/00521251-46e7-49e9-b035-dfc360c9120c",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Road",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:person/road"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1524,889,79,41"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/canvas/27"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/f69bc136f8ce091ecca72c5422ab0645/00541eee-ad58-4e47-92e7-f8eb8267e15f",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Indian Affairs Section I.",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/indian+affairs+section+i."
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-48-134/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=1613,278,306,34"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-48-134/canvas/c89"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-48-134/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=813,381,211,39"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-48-134/canvas/c89"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/55fbcb4c7c2a9a963aabaeebe9db5352/0054c116-3a48-4238-8ab8-88c6b6bf3b48",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/irish+brigade"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Irish Brigade",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_bins_ejxu5cvs-0-5/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2200,718,836,78"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_bins_ejxu5cvs-0-5/canvas/c2"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/4db1d894c0db1148e389e654e9b3537d/0055ad0c-0568-4d8d-b112-eef08b30583d",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Pima",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/pima"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1473_27_cvs-1-10/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1407,2855,93,41"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1473_27_cvs-1-10/canvas/c3"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/5bef61228c8a376648ce9e248602a0af/005a7209-e35a-459a-8508-7aa4358d79dc",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Camperâs",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/camper%c3%a2%c2%80%c2%99s"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=474,2025,228,46"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/canvas/c0.72"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/ce30fa3e57aca97d91957c72186117da/005d8dcf-732a-4f50-b70b-8d0e0343ed73",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/poland"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Poland",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/324fdd0d-21f7-4c9e-bf31-7ad156075253/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=470,1553,90,27"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/324fdd0d-21f7-4c9e-bf31-7ad156075253/canvas/2"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/efd7c0bb54682e9a60b9656cc391d1d4/005df84b-c300-4f1a-abce-da4b97f8fa47",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "July 1, 1935",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/july+1%2c+1935"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=563,2262,255,38"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/canvas/c10"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/bacae210a8066f29aeea6d0afd5cb21d/005f9f2a-446a-4591-ae42-69617d3a91ee",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/january"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "January",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1286,2124,180,34"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c986"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/1ad89ca4bfe52e9a33e0a4c1cbaf13cb/00601551-2ebf-45f0-bbea-b1908ca5fc33",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Tribal Funds",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:norp/tribal+funds"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=345,1844,263,35"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c1141"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/98f349009533dce2105e2d58088985b1/00607f3f-b5e2-43d8-81af-c3d6add669fd",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:person/field"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Field",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1304_27_cvs-6-16/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1779,1183,116,46"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1304_27_cvs-6-16/canvas/c6"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/ab2f7816a6b570ea0a2c27fdc2716ec1/00619a92-7fbe-4099-9eab-dcbdddc04e73",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "1870",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/1870"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1473_18_cvs-2-11/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1108,716,91,33"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1473_18_cvs-2-11/canvas/c4"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/ef3c6be96dc65ecd5cdcd82c8998a63c/006759a8-5a6c-4a6f-baef-dcf032be8856",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/day+schools%22"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Day Schools\"",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1473_18_cvs-2-11/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=925,2595,291,43"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1473_18_cvs-2-11/canvas/c3"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/31607a1597d6e0e19fb6ab39bb0a57b3/006a261f-54ab-4109-b786-ca405483cc87",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:person/mamm"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Mamm",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=660,639,167,36"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/canvas/c0.280"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/2703cc72e448f21f6d76ac7ffec2a48a/006b8a36-b29d-4b0a-860d-a1a1bace40d6",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Stableman",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/stableman"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=757,668,256,44"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c150"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/8d3953952f1a54ea773c5bc4b6f8a7a9/006f1c4d-bd86-48e6-a789-09d39e5452ba",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Olse",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/olse"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1774,2330,97,31"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c1008"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/5ef224a1d175a3f7b721586347487fe1/0072bd4a-f84a-4776-be53-25740127581c",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/notle"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Notle",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1132,231,71,36"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/canvas/14"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/6249fab9c5de9486a46f15662e4ffba0/0074cbb0-cfa4-447e-97cd-d7b76f55b14d",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:person/shielels+j"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Shielels J",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-941_03_cvs-9-29/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2045,1672,212,43"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-941_03_cvs-9-29/canvas/c24"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/b402062f0a4ec4f466580cf1e10b6722/0078ba14-a521-44f4-9e5c-69bcc9a14899",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "fiscal year 1932",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/fiscal+year+1932"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-48-134/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1152,2338,435,57"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-48-134/canvas/c118"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/e16b3c4c437f686b40899f8eaded8f33/007a26f8-50bf-48ff-9679-8a62eb05dbcf",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/%e2%80%93+30th"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "– 30th",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/6d6cfc7a-ce87-4512-bf20-80746a3f8e60/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=443,1676,125,43"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/6d6cfc7a-ce87-4512-bf20-80746a3f8e60/canvas/c0.0.18"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/927ad0121c66b2b46259893f42346fbf/007a4101-6a6e-4184-9a3e-9b3cdfb8c1c6",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:work_of_art/standing+rock+indian+agency+part"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Standing Rock Indian Agency Part",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:WORK_OF_ART",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-48-134/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=812,556,702,47"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-48-134/canvas/c77"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-48-134/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=255,650,80,28"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-48-134/canvas/c77"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/0c53bf62cc0d20720901cd8d5be44b7b/007b896a-a964-4548-9915-5fbd26517098",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "5248 a OFFICE OF",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/5248+a+office+of"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1051,203,820,46"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c1069"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/a9fb8c6d4e9a5e4ced05af9ab455de11/007bb20c-8c5e-46be-ae39-bb7760e37214",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/road"
+          },
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Road",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2481,1287,78,34"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/canvas/12"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/e136dfe35c631a1ed08b16ac432f4e92/00828674-f026-4489-86ef-beff20a7fb15",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Indians",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:norp/indians"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=998,1035,175,34"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c179"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/50082c916e49eee90ee7edd8dda96fa5/00864f8c-d814-438c-8310-83895b7bdfe3",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/coming+year"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "coming year",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-527-534/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1459,1271,318,36"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-527-534/canvas/c534"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/6055c84ab7dbfb62353ac6b4ee1f271c/00870d16-5679-477e-bd5f-c90ad2cc995e",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:person/rec+cits"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Rec Cits",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-941_03_cvs-9-29/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1957,1950,220,51"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-941_03_cvs-9-29/canvas/c11"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/12f10c934ff16c6b697e66b5ecb6035b/0087f705-626d-4ec1-9d17-3195129f4ee6",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/raood"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Raood",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=536,935,165,32"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c1187"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/c72a4b1b7e02b24e6c16c73985e3b3ca/00899bdd-3a6a-4f1e-a94e-fb758f6953f7",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Eisle",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:person/eisle"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-941_03_cvs-9-29/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=644,826,88,59"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-941_03_cvs-9-29/canvas/c12"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/5b7c4c30c352519a9e816552fb11ed99/008bfd19-a490-44c7-9d90-1cf698026480",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/san+xavier"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "San Xavier",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=623,2138,362,31"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c27"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/07c4fd0866e99b6d981d79e89e9e20b1/008d02f3-ef87-4d21-9b21-f218a05505e6",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Catholic",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:norp/catholic"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1664,1750,201,38"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/canvas/c251"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/e673358608dd76111ccbff21566d35e8/008e94a0-ddb8-4c74-b1d1-4cafc1612007",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Bertie",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/bertie"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_collections_catalog_gng00192_manifestcvs-0-12/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2868,4447,333,87"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_collections_catalog_gng00192_manifestcvs-0-12/canvas/c0"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/ae38bb185cbc729f4d1dc63d0b5c8feb/00900434-2c7e-4913-83cd-059374862222",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "O5 Materials",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/o5+materials"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=131,913,255,39"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c1147"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/c994380dd6b6824059a9568c0ba0d90c/009519e0-30cb-42c4-a48f-2a4b244e23d4",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Episcopal",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:norp/episcopal"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=717,1093,247,40"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/canvas/c265"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/55f4a24e070b02d556ed28a722790ab3/0095909f-b6bd-41da-8d53-eae391bfc017",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/bushehr"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Bushehr",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1639,2096,94,45"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/canvas/7"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/758c2043b5f94d1a36c43a4f57d0d060/0095c067-80f5-4620-aa3f-02bd87dfcf10",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/date/year"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "year",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-210-235/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1370,613,104,36"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-210-235/canvas/c218"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/cc75b0f1c8bf80ac19f7c28d80309ea7/0097eeaf-c1a6-4815-82ed-07329bb978c1",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/theodore+roosvelt+school"
+          },
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Theodore Roosvelt School",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_127_cvs-93-153/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=1885,2510,65,32"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_127_cvs-93-153/canvas/c113"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_127_cvs-93-153/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=635,2569,612,50"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_127_cvs-93-153/canvas/c113"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/1d01d7643951c47aca47949ba8495cce/009c7e33-0b3d-46c8-96ca-d60651e96d92",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Weeper Sapajou.âSimla",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/weeper+sapajou.%c3%a2%c2%80%c2%94simla"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=831,601,625,51"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/canvas/c0.287"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/db56ef34af5ed5f2e2e581ef1f933e37/009e3764-d421-47b0-91c6-48185480c9c0",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "C. Nursing",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/c.+nursing"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=331,1106,191,32"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c1030"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/f4c3f62f64339c57af7e08164b262c82/009e5809-bc15-4ac9-9720-fd35feb51503",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Aug. 1, 1935",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/aug.+1%2c+1935"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=702,1576,145,37"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/canvas/c26"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=439,1624,102,37"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/canvas/c26"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/fea29f9a19847bc693f277355728f363/009f58d1-88bf-46c9-b195-883548206d8e",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:person/catholios"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Catholios",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-527-534/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=763,2370,207,36"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-527-534/canvas/c529"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/2f68d2149b4090646a5c45644bcdd417/00a591d8-c717-490d-a495-af55308663d0",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:School",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/santa+fe+indian+school"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Santa Fe Indian School",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/school/santa+fe+indian+school"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1473_18_cvs-2-11/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=483,1976,568,37"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1473_18_cvs-2-11/canvas/c7"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/f1483112b9b89c06cd03da24e6200799/00a5f00a-fac9-4c28-a5ad-b45e170c699a",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Committee",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/committee"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=938,830,230,38"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c201"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/5c5f96cb9c73fb221e436604b5252e71/00a69560-7bd0-4941-be93-2a923b95edbb",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "quarters",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/quarters"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-299-343/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1592,997,261,36"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-299-343/canvas/c310"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/70f0ea65cbadd9bf0d86f8c167831c31/00a8e1d5-1a69-453b-b2f4-112e46da33e3",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/date/year"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "year",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-299-343/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=306,2213,102,28"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-299-343/canvas/c316"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/74b5c6c1fb023e869855538877ea85df/00a959f2-ac7a-4806-9abd-67f0c9cf4e64",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Indians",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:norp/indians"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1341,1266,173,41"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c188"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/32f0a43c34c01fe7e23ec69fb79b67ca/00ab222c-b48a-41be-94b9-11b891a6e7d3",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Lower Brule Agency",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/lower+brule+agency"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1406,1067,489,43"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-203-405/canvas/c289"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/e0721b6d025d8c54ca91d20a4672f963/00ab34a7-00a3-4993-bd1f-71b4cd0265ec",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "L. a. Lippert LL",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/l.+a.+lippert+ll"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-153-209/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=630,2694,596,48"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-153-209/canvas/c169"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/db2689366541dc05fed0baea682335e7/00ac3b2d-2568-4fdb-b3c7-0c53f4f370c0",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/hoenitial"
+          },
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Hoenitial",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=950,1248,204,48"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c1063"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/b7473c04dd40c228ba937d889aed7075/00adfd51-b3c0-4c7b-ab9d-496b47380f1d",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/pomerania"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Pomerania",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/5aad06f5-0b21-4b2b-b29f-78772664aec9/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=683,670,153,37"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/5aad06f5-0b21-4b2b-b29f-78772664aec9/canvas/2"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/110e09ca406779871822ffb2b48050af/00b05e26-68cc-4c28-a065-0d405e01e403",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/date/year"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "year",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-527-534/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=503,1754,83,35"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-527-534/canvas/c532"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/bb3a24798a1b17b98042299a93432d30/00b5bfd1-365b-4d5c-a607-6ae937bbf0f3",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Journal",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/journal"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/fed531eb-c83d-4773-a5c6-79326750832a/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=679,1070,101,33"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/fed531eb-c83d-4773-a5c6-79326750832a/canvas/0"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/f8a956c2f34e6027f80be3d1e724344a/00b7b15f-849b-45aa-96d3-f9d098aa1403",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/date/year"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "year",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=738,1606,156,37"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c1168"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/fa158973de504062c39500676225c4b7/00b7b3c1-8d58-42c3-8b1c-d34b700a169e",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "INDIANS",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:norp/indians"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=915,509,146,38"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_033_cvs-969-1225/canvas/c1050"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/c7da17ee575978ac9773527e2b7c685d/00b8d4e9-708e-4446-a20d-497cec2d2df2",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/1928"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "1928",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1595,444,99,38"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c19"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/50082c916e49eee90ee7edd8dda96fa5/00ba9127-5531-4b91-b9d0-35b7ad590f78",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Tacoma Hospital",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/tacoma+hospital"
+          },
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-527-534/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=1624,826,58,38"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-527-534/canvas/c534"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-527-534/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=451,926,341,39"
+            },
+            "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-527-534/canvas/c534"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/4a5ac32d68077d6cc4fe4ea2eaa5460f/00baf975-f502-4416-82de-c1053f4963c4",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Desm",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:person/desm"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=636,2641,134,35"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/2803dc95-1bb6-4ee7-8d79-c18cfc37cf2d/canvas/c0.293"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/ff03d16a92556c5f23d52fe673b49665/00c2359f-515d-4bac-b2f4-ce845f6aa695",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Canning",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:org/canning"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=650,889,175,36"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c94"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/801a57ab05e42167ba983cfd4ac34785/00c28a5c-cf9d-493c-874d-aaaf29996bbf",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Fort Lapwai",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/fort+lapwai"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=643,2186,232,38"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/canvas/c18"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/fd1a0e97111f1ba35aaff15666123195/00c3752d-1707-4597-868c-0be1ae2d13b4",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/july+1%2c+1921"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "July 1, 1921",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=448,2053,276,35"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/canvas/c20"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/223c0329be1934c0c5b99b377b33e1de/00c7a0c9-ddb6-472b-abd6-f98ddde6f90b",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "1921",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/1921"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1562,820,104,36"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_144_cvs-7-202/canvas/c30"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/a9fb8c6d4e9a5e4ced05af9ab455de11/00cebea2-a27d-4a3b-acd3-9328b4ddea4a",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/statute"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Statute",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=742,1857,132,32"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/x/9567cacc-cf9c-4713-99fd-d27c037818e7/canvas/12"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/fd9b3613904b9768cf00ff3c7672a665/00ced4af-ebf5-4cd2-966b-5071534d672c",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:norp/indian"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Indian",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-135-152/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=764,1277,124,36"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-135-152/canvas/c144"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/0aa57a52b6c30b7fec41cac0237b20d7/00d3464a-21f0-4ec2-a98e-92231e413c68",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:gpe/sheet"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Sheet",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-236-298/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=426,1135,36,101"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-236-298/canvas/c278"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.dlcs-ida.org/annotation/w3c/801a57ab05e42167ba983cfd4ac34785/00d3a783-6c2c-41bd-b7fa-e61cee4c0937",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "1910",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "purpose": "tagging",
+            "source": "https://omeka.dlcs-ida.org/s/ida/page/topics/virtual:date/1910"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=793,1484,83,31"
+          },
+          "source": "https://presley.dlcs-ida.org/iiif/idatest01/_roll_M-1011_145_cvs-4-28/canvas/c18"
+        },
+        "motivation": "tagging"
+      }
+    ],
+    "next": "https://elucidate.dlcs-ida.org/annotation/w3c/services/search/body?page=1&fields=source&value=https%3A%2F%2Fomeka.dlcs-ida.org&desc=1",
+    "partOf": "https://elucidate.dlcs-ida.org/annotation/w3c/services/search/body?fields=source&value=https%3A%2F%2Fomeka.dlcs-ida.org",
+    "startIndex": 0
+  },
+  "last": "https://elucidate.dlcs-ida.org/annotation/w3c/services/search/body?page=1&fields=source&value=https%3A%2F%2Fomeka.dlcs-ida.org&desc=1",
+  "total": 200
+}

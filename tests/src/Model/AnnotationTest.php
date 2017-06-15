@@ -17,23 +17,27 @@ class AnnotationTest extends PHPUnit_Framework_TestCase
         $annotation = new Annotation('123', [
             'type' => 'TextualBody',
             'value' => 'I like this page!',
-        ], 'http://www.example.com/index.html',
-            [
-                'id' => 'http://localhost:8888/api/users/6',
-                'type' => 'Person',
-                'name' => 'test',
-                'nickname' => 'test',
-                'email_sha1' => 'test@test.com',
-            ],
-            [
+        ],
+            'http://www.example.com/index.html'
+        );
+
+        $annotation = $annotation->withMetaData([
+           'creator' => [
+               'id' => 'http://localhost:8888/api/users/6',
+               'type' => 'Person',
+               'name' => 'test',
+               'nickname' => 'test',
+               'email_sha1' => 'test@test.com',
+           ],
+            'generator' => [
                 'id' => 'http://example.org/client1',
                 'type' => 'Software',
                 'name' => 'Code v2.1',
                 'homepage' => 'http://example.org/client1/homepage1',
             ]
-        );
+        ]);
 
-        $this->assertEquals('123/', (string) $annotation);
+        $this->assertEquals('123/', (string)$annotation);
 
         $json = '{
             "type": "Annotation",

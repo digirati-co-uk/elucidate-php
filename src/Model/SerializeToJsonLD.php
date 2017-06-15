@@ -9,8 +9,15 @@ trait SerializeToJsonLD
     public function jsonSerialize()
     {
         $json = get_object_vars($this);
+        unset($json['metaData']);
         unset($json['container']);
         $json['@context'] = $this->getContext();
+        // Add metaData.
+        if (isset($this->metaData)) {
+            foreach ($this->metaData as $key => $metaData) {
+                $json[$key] = $metaData;
+            }
+        }
 
         return $json;
     }
@@ -25,14 +32,20 @@ trait SerializeToJsonLD
         return $this;
     }
 
-    public static function fromJson(string $json)
+    public static function fromArray(array $data)
     {
-        $data = json_decode($json, true);
         $model = new static();
         foreach ($data as $field => $value) {
             $model->{$field} = $value;
         }
 
         return $model;
+    }
+
+    public static function fromJson(string $json)
+    {
+        $data = json_decode($json, true);
+
+        return self::fromArray($data);
     }
 }

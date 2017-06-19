@@ -11,10 +11,7 @@ final class Container implements RequestModel, ResponseModel, ArrayAccessInterfa
     use ArrayAccess;
 
     private $label;
-    private $type = [
-        'BasicContainer',
-        'AnnotationCollection',
-    ];
+    private $type = 'AnnotationCollection';
     private $id;
 
     public function __construct(string $label = null, string $id = null)

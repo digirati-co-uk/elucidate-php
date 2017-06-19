@@ -9,13 +9,12 @@ class Annotation implements RequestModel, ResponseModel, ArrayAccessInterface
     use JsonLDContext;
     use SerializeToJsonLD;
     use ArrayAccess;
+    use WithMetaData;
 
     private $type;
     private $body;
     private $target;
     private $id;
-    private $creator;
-    private $generator;
     private $container;
 
     public function getContainer()
@@ -27,16 +26,12 @@ class Annotation implements RequestModel, ResponseModel, ArrayAccessInterface
         string $id = null,
         $body = null,
         $target = null,
-        $creator = null,
-        $generator = null,
         Container $container = null
     ) {
         $this->type = 'Annotation';
         $this->body = $body;
         $this->target = $target;
         $this->id = $id;
-        $this->creator = $creator;
-        $this->generator = $generator;
         $this->container = $container;
     }
 

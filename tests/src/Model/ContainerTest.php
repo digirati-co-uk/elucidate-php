@@ -2,7 +2,10 @@
 
 namespace Elucidate\Tests\Model;
 
+use Elucidate\Model\Annotation;
 use Elucidate\Model\Container;
+use Elucidate\Model\SearchResult;
+use Elucidate\Search\SearchQuery;
 use PHPUnit_Framework_TestCase;
 
 class ContainerTest extends PHPUnit_Framework_TestCase
@@ -18,10 +21,7 @@ class ContainerTest extends PHPUnit_Framework_TestCase
 
         $json = '{
             "label": "Something label",
-            "type": [
-                "BasicContainer",
-                "AnnotationCollection"
-            ],
+            "type": "AnnotationCollection",
             "id": null,
             "@context": [
                 "http:\/\/www.w3.org\/ns\/anno.jsonld",
@@ -55,5 +55,30 @@ class ContainerTest extends PHPUnit_Framework_TestCase
         $this->assertContains('http://www.w3.org/ns/ldp.jsonld', $container['@context']);
         $this->assertContains('BasicContainer', $container['type']);
         $this->assertContains('AnnotationCollection', $container['type']);
+    }
+
+    public function test_can_load_container()
+    {
+        $json = file_get_contents(__DIR__ . '/../../fixtures/container.json');
+        Container::fromJson($json);
+    }
+
+    public function test_can_load_search_result()
+    {
+        $json = file_get_contents(__DIR__ . '/../../fixtures/search.json');
+        $search = new SearchResult(Container::fromJson($json));
+
+        foreach ($search->getResults() as $result) {
+            $this->assertInstanceOf(Annotation::class, $result);
+            $this->assertNotNull($result['target']);
+            $this->assertNotNull($result['body']);
+        }
+
+        $this->assertEquals(
+            'https://elucidate.dlcs-ida.org/annotation/w3c/services/search/body?page=1&fields=source&value=https%3A%2F%2Fomeka.dlcs-ida.org&desc=1',
+            $search->getNextPage()
+        );
+
+        $this->assertInstanceOf(SearchQuery::class, $search->getNextSearchQuery());
     }
 }

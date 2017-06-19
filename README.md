@@ -27,6 +27,11 @@ $annotation = new Elucidate\Model\Annotation(null, [
             'type' => 'TextualBody',
             'value' => 'I like this page!'
         ], 'http://www.example.com/index.html');
+        
+// Add metaData
+$annotation->withMetaData([
+  'creator' => 'stephen@_.com'
+]);
 
 // Assign it to a container.
 $annotation->withContainer($container);
@@ -37,8 +42,18 @@ $elucidate->createAnnotation($annotation);
 // Search for the annotation.
 $json = $elucidate->search(new Elucidate\Search\SearchByTarget(['id'], 'http://www.example.com/index.html'));
 
-$rawSearch = json_decode($json);
+// Get search result wrapper
+$searchResult = SearchResult::fromJson($json);
 
-...
+// get annotations (generator)
+$annotations = $searchResult->getResults(); // Annotation objects
 
+// get next page ID
+$searchResult->getNextPage();
+
+// Search for next page
+$page2 = $elucidate->search($searchResult->getNextSearchQuery());
+
+// etc..
+$searchResultPage2 = SearchResult::fromJson($page2);
 ```

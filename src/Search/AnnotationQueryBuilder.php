@@ -97,9 +97,9 @@ final class AnnotationQueryBuilder
 
     public function build(): ServiceQuery
     {
+        Assertion::notNull($this->value, "Must specify a search term for an annotation query");
         Assertion::notEmpty($this->fields, "Must specify fields for an annotation query");
         Assertion::allInArray($this->fields, ['id', 'source'], "Invalid fields given.  Expected 'id' or 'source'");
-        Assertion::notNull($this->value, "Must specify a search term for an annotation query");
 
         $parameters = [
             'fields' => implode($this->fields, ','),
@@ -114,7 +114,7 @@ final class AnnotationQueryBuilder
         return new ServiceQuery($this->path, $parameters);
     }
 
-    private function field($id, string $value)
+    public function field($id, string $value)
     {
         $this->fields = is_array($id) ? $id : [$id];
         $this->value = $value;

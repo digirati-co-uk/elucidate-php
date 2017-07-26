@@ -101,8 +101,8 @@ class AuthorQueryBuilder
 
     public function build(): ServiceQuery
     {
-        Assertion::notEmpty($this->levels);
-        Assertion::allInArray($this->levels, ['body', 'target', 'annotation']);
+        Assertion::notEmpty($this->levels, "Must provide search levels to query at");
+        Assertion::allInArray($this->levels, ['body', 'target', 'annotation'], 'Levels can only be one of: body, target, annotation');
         Assertion::notNull($this->type, 'Must provide a type to query by.');
         Assertion::notNull($this->value, 'Must provide a search term');
 

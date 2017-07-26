@@ -8,6 +8,7 @@ class ServiceQuery implements SearchQuery
      * @var string
      */
     private $servicePath;
+
     /**
      * @var array
      */
@@ -22,5 +23,6 @@ class ServiceQuery implements SearchQuery
 
     public function __toString(): string
     {
+        return $this->servicePath . '?' . http_build_query($this->parameters);
     }
 }

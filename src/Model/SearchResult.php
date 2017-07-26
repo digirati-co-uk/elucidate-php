@@ -2,7 +2,7 @@
 
 namespace Elucidate\Model;
 
-use Doctrine\Common\Collections\ArrayCollection;
+use ArrayIterator;
 use Elucidate\Search\SearchCustom;
 
 class SearchResult
@@ -38,10 +38,10 @@ class SearchResult
     public function getResults()
     {
         if (!$this->container['first']) {
-            return new ArrayCollection();
+            return new ArrayIterator([]);
         }
 
         $items = $this->container['first']['items'];
-        return new ArrayCollection(array_map([Annotation::class, 'fromArray'], $items));
+        return new ArrayIterator(array_map([Annotation::class, 'fromArray'], $items));
     }
 }

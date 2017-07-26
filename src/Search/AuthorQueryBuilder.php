@@ -11,12 +11,12 @@ class AuthorQueryBuilder
     /**
      * Relative path to the annotation creator search service.
      */
-    const SEARCH_CREATOR_SERVICE_PATH = '/search/service/creator';
+    const SEARCH_CREATOR_SERVICE_PATH = '/services/search/creator';
 
     /**
      * Relative path to the annotation generator search service.
      */
-    const SEARCH_GENERATOR_SERVICE_PATH = '/search/service/generator';
+    const SEARCH_GENERATOR_SERVICE_PATH = '/services/search/generator';
 
     /**
      * The levels within an annotation to search for the {@code creator} or {@code generator}.
@@ -88,7 +88,18 @@ class AuthorQueryBuilder
         return $this;
     }
 
-    public function build(): string
+    /**
+     * Make this search match at all levels of an annotation.
+     *
+     * @return $this
+     */
+    public function atAllLevels()
+    {
+        $this->levels = ['body', 'target', 'annotation'];
+        return $this;
+    }
+
+    public function build(): ServiceQuery
     {
         Assertion::notEmpty($this->levels);
         Assertion::allInArray($this->levels, ['body', 'target', 'annotation']);
@@ -102,7 +113,7 @@ class AuthorQueryBuilder
             'strict' => $this->strict ? 'true' : 'false'
         ];
 
-        return $this->path . '?' . http_build_query($parameters);
+        return new ServiceQuery($this->path, $parameters);
     }
 
     private function with(string $field, string $value)

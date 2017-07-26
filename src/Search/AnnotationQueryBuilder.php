@@ -95,7 +95,7 @@ final class AnnotationQueryBuilder
         return new self(static::SEARCH_TARGET_SERVICE_PATH);
     }
 
-    public function build(): string
+    public function build(): ServiceQuery
     {
         Assertion::notEmpty($this->fields, "Must specify fields for an annotation query");
         Assertion::allInArray($this->fields, ['id', 'source'], "Invalid fields given.  Expected 'id' or 'source'");
@@ -111,7 +111,7 @@ final class AnnotationQueryBuilder
             'creator' => $this->creator
         ];
 
-        return $this->path . '?' . http_build_query($parameters);
+        return new ServiceQuery($this->path, $parameters);
     }
 
     private function field($id, string $value)

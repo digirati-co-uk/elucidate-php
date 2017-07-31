@@ -2,6 +2,7 @@
 
 namespace Elucidate\Model;
 
+use ArrayIterator;
 use Elucidate\Search\SearchCustom;
 
 class SearchResult
@@ -11,6 +12,16 @@ class SearchResult
     public function __construct(Container $container)
     {
         $this->container = $container;
+    }
+
+    public static function fromArray(array $data): SearchResult
+    {
+        return new static(Container::fromArray($data));
+    }
+
+    public static function fromJson(string $json): SearchResult
+    {
+        return new static(Container::fromJson($json));
     }
 
     /** @return SearchCustom|null */
@@ -27,20 +38,10 @@ class SearchResult
     public function getResults()
     {
         if (!$this->container['first']) {
-            return;
+            return new ArrayIterator([]);
         }
-        foreach ($this->container['first']['items'] as $item) {
-            yield Annotation::fromArray($item);
-        }
-    }
 
-    public static function fromArray(array $data) : SearchResult
-    {
-        return new static(Container::fromArray($data));
-    }
-
-    public static function fromJson(string $json) : SearchResult
-    {
-        return new static(Container::fromJson($json));
+        $items = $this->container['first']['items'];
+        return new ArrayIterator(array_map([Annotation::class, 'fromArray'], $items));
     }
 }

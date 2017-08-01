@@ -11,12 +11,12 @@ final class AnnotationQueryBuilder
     /**
      * Relative path to the annotation body search service.
      */
-    const SEARCH_BODY_SERVICE_PATH = '/services/search/body';
+    const SEARCH_BODY_SERVICE_PATH = 'services/search/body';
 
     /**
      * Relative path to the annotation target search service.
      */
-    const SEARCH_TARGET_SERVICE_PATH = '/services/search/target';
+    const SEARCH_TARGET_SERVICE_PATH = 'services/search/target';
 
     /**
      * @var string

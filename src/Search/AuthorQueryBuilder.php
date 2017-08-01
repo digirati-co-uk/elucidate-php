@@ -11,12 +11,12 @@ class AuthorQueryBuilder
     /**
      * Relative path to the annotation creator search service.
      */
-    const SEARCH_CREATOR_SERVICE_PATH = '/services/search/creator';
+    const SEARCH_CREATOR_SERVICE_PATH = 'services/search/creator';
 
     /**
      * Relative path to the annotation generator search service.
      */
-    const SEARCH_GENERATOR_SERVICE_PATH = '/services/search/generator';
+    const SEARCH_GENERATOR_SERVICE_PATH = 'services/search/generator';
 
     /**
      * The levels within an annotation to search for the {@code creator} or {@code generator}.

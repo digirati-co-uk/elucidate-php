@@ -37,7 +37,7 @@ class SearchResult
 
     public function getResults()
     {
-        if (!$this->container['first']) {
+        if (!$this->container['first'] || !isset($this->container['first']['items'])) {
             return new ArrayIterator([]);
         }
 

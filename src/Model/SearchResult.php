@@ -35,6 +35,11 @@ class SearchResult
         return $this->container['first']['next'] ?? null;
     }
 
+    public function getTotalResults() : int
+    {
+        return $this->container['total'] ?? 0;
+    }
+
     public function getResults()
     {
         if (!$this->container['first'] || !isset($this->container['first']['items'])) {

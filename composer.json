@@ -26,6 +26,7 @@
     },
     "require": {
         "guzzlehttp/psr7": "^1.4",
-        "beberlei/assert": "^2.7"
+        "beberlei/assert": "^2.7",
+        "symfony/event-dispatcher": "^3.3"
     }
 }

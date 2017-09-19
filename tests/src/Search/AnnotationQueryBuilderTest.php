@@ -35,5 +35,4 @@ final class AnnotationQueryBuilderTest extends PHPUnit_Framework_TestCase
         AnnotationQueryBuilder::byBody()
             ->build();
     }
-
 }

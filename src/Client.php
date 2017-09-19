@@ -8,17 +8,21 @@ use Elucidate\Model\Annotation;
 use Elucidate\Model\Container;
 use Elucidate\Search\SearchQuery;
 
-class Client
+class Client implements ClientInterface
 {
-    public function __construct(HttpAdapter $client)
-    {
+    private $client;
+
+    public function __construct(
+        HttpAdapter $client
+    ) {
         $this->client = $client;
     }
+
 
     public function getContainer($idOrContainer)
     {
         return Container::fromJson(
-            $this->client->get((string) $idOrContainer.'/')
+            $this->client->get((string)$idOrContainer . '/')
         );
     }
 
@@ -36,7 +40,7 @@ class Client
         )->withContainer($container);
     }
 
-    public function createAnnotation(Annotation $annotation) : Annotation
+    public function createAnnotation(Annotation $annotation): Annotation
     {
         $container = $annotation->getContainer();
         if (!$container) {
@@ -44,11 +48,11 @@ class Client
         }
 
         return Annotation::fromJson(
-            $this->client->post($container.'/', $annotation)
+            $this->client->post($container . '/', $annotation)
         )->withContainer($container);
     }
 
-    public function updateAnnotation(Annotation $annotation) : Annotation
+    public function updateAnnotation(Annotation $annotation): Annotation
     {
         $container = $annotation->getContainer();
         if (!$container) {

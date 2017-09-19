@@ -16,7 +16,6 @@ class ServiceQuery implements SearchQuery
 
     public function __construct(string $servicePath, array $parameters)
     {
-
         $this->servicePath = $servicePath;
         $this->parameters = $parameters;
     }

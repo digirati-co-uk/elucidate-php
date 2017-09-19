@@ -14,7 +14,9 @@ class AnnotationTest extends PHPUnit_Framework_TestCase
 
     public function test_can_serialize()
     {
-        $annotation = new Annotation('123', [
+        $annotation = new Annotation(
+            '123',
+            [
             'type' => 'TextualBody',
             'value' => 'I like this page!',
         ],

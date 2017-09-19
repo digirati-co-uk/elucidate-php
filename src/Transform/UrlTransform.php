@@ -7,7 +7,6 @@ use Elucidate\Model\Container;
 use InvalidArgumentException;
 use Zend\Uri\Uri;
 
-
 class UrlTransform
 {
     private $uri;
@@ -17,7 +16,8 @@ class UrlTransform
         $this->uri = new Uri($uri);
     }
 
-    private function transformUri($url) {
+    private function transformUri($url)
+    {
         $newUrl = new Uri($url);
         $newUrl->setHost($this->uri->getHost());
         $newUrl->setPort($this->uri->getPort());
@@ -40,7 +40,7 @@ class UrlTransform
 
         // JSON.first.items
         if (isset($fields['first']['items'])) {
-            $fields['first']['items'] = array_map(function($annotation) {
+            $fields['first']['items'] = array_map(function ($annotation) {
                 $annotation['id'] = $this->transformUri($annotation['id']);
                 return $annotation;
             }, $fields['first']['items']);

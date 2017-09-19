@@ -9,7 +9,6 @@ use PHPUnit\Framework\TestCase;
 
 class UrlTransformTest extends TestCase
 {
-
     public function test_url_transform_basic_annotation()
     {
         $annotation = new Annotation('http://google.com/123/456');
@@ -31,5 +30,4 @@ class UrlTransformTest extends TestCase
 
         $this->assertFalse(strpos(json_encode($newContainer), 'elucidate'));
     }
-
 }

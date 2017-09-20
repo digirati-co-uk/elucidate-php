@@ -19,21 +19,21 @@ class Client implements ClientInterface
     }
 
 
-    public function getContainer($idOrContainer)
+    public function getContainer($idOrContainer): Container
     {
         return Container::fromResponse(
             $this->client->get((string)$idOrContainer . '/')
         );
     }
 
-    public function createContainer(Container $container)
+    public function createContainer(Container $container): Container
     {
         return Container::fromResponse(
             $this->client->post($this->client->getBaseUri(), $container)
         );
     }
 
-    public function getAnnotation($container, $annotation)
+    public function getAnnotation($container, $annotation): Annotation
     {
         return Annotation::fromResponse(
             $this->client->get($annotation)
@@ -69,8 +69,12 @@ class Client implements ClientInterface
         return $this->client->delete($annotation);
     }
 
-    public function search(SearchQuery $query)
+    public function search(SearchQuery $query, $asResponse = false)
     {
-        return $this->client->get($query);
+        $response = $this->client->get($query);
+        if ($asResponse) {
+            return $response;
+        }
+        return (string) $response->getBody();
     }
 }

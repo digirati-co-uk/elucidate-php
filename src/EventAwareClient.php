@@ -55,7 +55,7 @@ class EventAwareClient implements ClientInterface
         return $postEvent->annotationExists() ? $postEvent->getAnnotation() : $container;
     }
 
-    public function getContainer($idOrContainer)
+    public function getContainer($idOrContainer): Container
     {
         return $this->containerLifecycle(
             $idOrContainer,
@@ -67,7 +67,7 @@ class EventAwareClient implements ClientInterface
         );
     }
 
-    public function createContainer(Container $container)
+    public function createContainer(Container $container): Container
     {
         return $this->containerLifecycle(
             $container,
@@ -79,7 +79,7 @@ class EventAwareClient implements ClientInterface
         );
     }
 
-    public function getAnnotation($container, $annotation)
+    public function getAnnotation($container, $annotation): Annotation
     {
         return $this->annotationLifecycle(
             $annotation,
@@ -132,6 +132,6 @@ class EventAwareClient implements ClientInterface
 
     public function search(SearchQuery $query)
     {
-        return $this->search($query);
+        return $this->client->search($query);
     }
 }

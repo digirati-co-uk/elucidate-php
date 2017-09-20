@@ -7,11 +7,11 @@ use Elucidate\Search\SearchQuery;
 
 interface ClientInterface
 {
-    public function getContainer($idOrContainer);
+    public function getContainer($idOrContainer) : Container;
 
-    public function createContainer(Container $container);
+    public function createContainer(Container $container) : Container;
 
-    public function getAnnotation($container, $annotation);
+    public function getAnnotation($container, $annotation) : Annotation;
 
     public function createAnnotation(Annotation $annotation) : Annotation;
 

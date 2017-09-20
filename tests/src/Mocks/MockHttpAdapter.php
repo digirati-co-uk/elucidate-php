@@ -4,6 +4,8 @@ namespace Elucidate\Tests\Mocks;
 
 use Elucidate\Adapter\HttpAdapter;
 use Elucidate\Model\RequestModel;
+use GuzzleHttp\Psr7\Response;
+use Psr\Http\Message\ResponseInterface;
 
 class MockHttpAdapter implements HttpAdapter
 {
@@ -40,32 +42,32 @@ class MockHttpAdapter implements HttpAdapter
         return $this;
     }
 
-    public function post(string $endpoint, RequestModel $request): string
+    public function post(string $endpoint, RequestModel $request, array $headers = [], int $code = 200): ResponseInterface
     {
         $post = $this->post;
 
-        return $post($endpoint, $request);
+        return new Response($code, $headers, $post($endpoint, $request));
     }
 
-    public function put(string $endpoint, RequestModel $request): string
+    public function put(string $endpoint, RequestModel $request, array $headers = [], int $code = 200): ResponseInterface
     {
         $put = $this->put;
 
-        return $put($endpoint, $request);
+        return new Response($code, $headers, $put($endpoint, $request));
     }
 
-    public function delete(RequestModel $request): bool
+    public function delete(RequestModel $request, array $headers = [], int $code = 200): ResponseInterface
     {
         $delete = $this->delete;
 
-        return $delete($request);
+        return new Response($code, $headers, $delete($request));
     }
 
-    public function get(string $endpoint, array $headers = []): string
+    public function get(string $endpoint, array $headers = [], int $code = 200): ResponseInterface
     {
         $get = $this->get;
 
-        return $get($endpoint);
+        return new Response($code, $headers, $get($endpoint));
     }
 
     public function getBaseUri(): string

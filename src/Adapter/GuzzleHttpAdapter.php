@@ -3,14 +3,15 @@
 namespace Elucidate\Adapter;
 
 use Elucidate\Model\RequestModel;
-use Exception;
 use GuzzleHttp\Client;
+use Psr\Http\Message\ResponseInterface;
+use Throwable;
 
 class GuzzleHttpAdapter implements HttpAdapter
 {
     private $client;
 
-    public function getBaseUri() : string
+    public function getBaseUri(): string
     {
         return $this->client->getConfig('base_uri');
     }
@@ -20,7 +21,7 @@ class GuzzleHttpAdapter implements HttpAdapter
         $this->client = $client;
     }
 
-    public function post(string $endpoint, RequestModel $request): string
+    public function post(string $endpoint, RequestModel $request): ResponseInterface
     {
         $headers = $request->getHeaders();
         $body = json_encode($request);
@@ -30,10 +31,10 @@ class GuzzleHttpAdapter implements HttpAdapter
             'body' => $body,
         ]);
 
-        return $response->getBody();
+        return $response;
     }
 
-    public function put(string $endpoint, RequestModel $request): string
+    public function put(string $endpoint, RequestModel $request): ResponseInterface
     {
         $headers = $request->getHeaders();
         $body = json_encode($request);
@@ -43,32 +44,30 @@ class GuzzleHttpAdapter implements HttpAdapter
             'body' => $body,
         ]);
 
-        return $response->getBody();
+        return $response;
     }
 
-    public function delete(RequestModel $request): bool
+    public function delete(RequestModel $request): ResponseInterface
     {
         $headers = $request->getHeaders();
         $body = json_encode($request);
 
         try {
-            $this->client->delete((string) $request, [
+            return $this->client->delete((string)$request, [
                 'headers' => $headers,
                 'body' => $body,
             ]);
-        } catch (Exception $e) {
-            return false;
+        } catch (Throwable $e) {
+            throw new HttpException('Something wen\'t wrong deleting this item', $e->getCode(), $e);
         }
-
-        return true;
     }
 
-    public function get(string $endpoint, array $headers = []): string
+    public function get(string $endpoint, array $headers = []): ResponseInterface
     {
         $response = $this->client->get($endpoint, [
             'headers' => $headers,
         ]);
 
-        return $response->getBody();
+        return $response;
     }
 }

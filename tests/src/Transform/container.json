@@ -1,0 +1,2347 @@
+{
+  "@context": [
+    "http:\/\/www.w3.org\/ns\/anno.jsonld",
+    "http:\/\/www.w3.org\/ns\/ldp.jsonld"
+  ],
+  "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/",
+  "type": "AnnotationCollection",
+  "label": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9",
+  "first": {
+    "type": "AnnotationPage",
+    "items": [
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/9cb52abe-f09f-4228-aed1-588bbef92a31",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:norp\/"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=912,884,118,40"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/1cb20a0e-7a13-4885-b7f3-9f24ef7b3a0a",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Indian Agent",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:org\/indian+agent"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1598,878,402,40"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/9066f3c4-912b-4cba-a33d-9d60cc0652ea",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Santa Fe",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/gpe\/santa+fe"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/santa+fe"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=2104,877,201,39"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/bff87a5d-00bc-4e0a-ad4c-38ec9510fa1a",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:Tribe",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/tribe\/jicarilla+apache"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Jicarilla Apache",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1293,935,220,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/26da0bce-3be7-4982-bfb2-c9204b1b4879",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Dulce",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/dulce"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1882,931,141,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/3c68caab-9d86-4f68-a109-d0c940ce06ed",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:Tribe",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/tribe\/jicarilla+apache"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Jicarilla Apache",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=777,988,230,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/764046e2-07d2-4d9c-a6be-3b885439e49f",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:date\/1891"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "1891",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=779,1036,100,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/24e1eac2-b2bf-4f83-8be4-aaf242c5f10f",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Pueblo",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:org\/pueblo"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1210,1034,155,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/6c007f94-8e48-4626-b9bd-920729bde431",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Dulce",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/dulce"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1316,1087,147,46"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/91ab3edc-4e4c-4e45-aca4-4dd0852ffc26",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:norp\/indian"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Indian",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1754,1189,143,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/57f92ef0-2f5f-4467-9645-4abe83b5450c",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:org\/san+ildefonso+press"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "San Ildefonso Press",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+              "value": "xywh=1037,1343,328,36"
+            },
+            "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+              "value": "xywh=777,1449,124,46"
+            },
+            "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/e549158d-d0e1-4d76-8661-47f58748928d",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:WORK_OF_ART",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:work_of_art\/day+schools"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Day Schools",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1803,1443,300,46"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/659b9088-7b98-42ec-9862-29412b3405b0",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "July 1898",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:date\/july+1898"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=2161,1441,242,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/f8a93e51-c48b-4061-a52e-b7f4cd59bf9c",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:date\/august+1900"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "August 1900",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=777,1500,302,40"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/d61e957d-182e-4919-8a84-b85b9f45b64a",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:date\/1898"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "1898",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=2167,2109,102,46"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/fc736040-6797-4478-b091-7e490874738d",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:work_of_art\/letters+and+records+received"
+          },
+          {
+            "value": "entity:WORK_OF_ART",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Letters and Records Received",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1113,2313,734,47"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/3f032936-0e1f-4aa4-91bc-92a4aa933464",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Federal",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/federal"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=782,2631,175,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/48b6004e-6c05-4976-a134-ec47b046c49b",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/washington"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Washington",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1326,2628,267,43"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/2219ccf4-7196-4197-a3f9-9cb4d0e36872",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Cimarron",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:org\/cimarron"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=2222,2623,193,36"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/3c037ea1-b79b-48bb-bfb2-f425e456d534",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Abiquiu Agencies",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:org\/abiquiu+agencies"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=887,2680,429,48"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/26d65f4e-3de9-45a0-9d77-b25ffd60ca21",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:norp\/pueblo+indians"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Pueblo Indians",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1247,2936,358,38"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/a3c0b889-18c5-4aa2-ae87-feae58a7d4d3",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:date\/1874+and+1879"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "1874 and 1879",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1633,2932,551,40"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/b2a205e5-60ea-4b96-bdd4-c9d251974756",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:law\/%22+letters+received%22"
+          },
+          {
+            "value": "entity:LAW",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "\" Letters Received\"",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1429,2981,556,45"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/5b8d13f6-27bb-4f02-bad9-6963c35e35d9",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Letters Received",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:person\/letters+received"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=792,3144,421,35"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/e6647c66-b5a9-4d24-aa29-26d36bf4a12c",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/washington"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Washington",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=2041,3290,271,43"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/f58c8922-3c1e-453e-b5e6-c2bfaa105db7",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "D. C.",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:person\/d.+c."
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=796,3349,116,35"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/d8087c49-a60e-4a0a-80b2-b05b1f0f4bae",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:person\/abiquiu+agency"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Abiquiu Agency",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1555,3396,379,51"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/c1444498-961e-4c62-86f0-68d5480b2406",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "AL A",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:org\/al+a"
+          },
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1009,3617,153,41"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/aa0b632e-3fe7-485a-900f-d958b0bcfc27",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/lic+a"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "LIC A",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=2108,3611,143,41"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/2ab919af-4257-4117-b2c9-f4b08d5921aa",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:norp\/"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=912,884,118,40"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/b9da1d1c-c75c-44c3-af76-35bc508e3ee8",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Indian Agent",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:org\/indian+agent"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1598,878,402,40"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/3dbc1a2e-326b-4168-b7e1-4a101c6d37da",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Santa Fe",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/gpe\/santa+fe"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/santa+fe"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=2104,877,201,39"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/c724f326-5168-4d62-9f9e-8cc98cfce510",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:Tribe",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/tribe\/jicarilla+apache"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Jicarilla Apache",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1293,935,220,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/97b3c69a-9d64-484a-bbea-6f49514e440c",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Dulce",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/dulce"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1882,931,141,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/fe0d61f3-ee13-4be0-992e-24cb244a49af",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:Tribe",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/tribe\/jicarilla+apache"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Jicarilla Apache",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=777,988,230,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/398b0db8-7fc6-45f7-a331-7b8a889c1be6",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:date\/1891"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "1891",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=779,1036,100,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/0c9ca315-0b61-47ee-8c3b-e8fa1edc49d2",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Pueblo",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:org\/pueblo"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1210,1034,155,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/d4c940d2-8fce-43a7-a7ab-0eee24be3350",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Dulce",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/dulce"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1316,1087,147,46"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/44821058-3204-419a-bfa5-e64bf0156cbf",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:norp\/indian"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Indian",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1754,1189,143,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/8dea7ae8-afdf-4c49-be1c-660b52e908be",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:org\/san+ildefonso+press"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "San Ildefonso Press",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+              "value": "xywh=1037,1343,328,36"
+            },
+            "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+              "value": "xywh=777,1449,124,46"
+            },
+            "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/6390f2c9-2580-4fa2-b43b-0356ab19bdba",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:WORK_OF_ART",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:work_of_art\/day+schools"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Day Schools",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1803,1443,300,46"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/8b5eb234-419b-4a51-92fd-b7ab07f22c4b",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "July 1898",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:date\/july+1898"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=2161,1441,242,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/cf2e58a4-dfc6-4713-8388-b54d058d41cb",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:date\/august+1900"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "August 1900",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=777,1500,302,40"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/3e6a22c5-63dd-4ac0-b05c-676019bd17ad",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:date\/1898"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "1898",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=2167,2109,102,46"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/4d82eadc-acb2-4501-928d-bbb91b62268f",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:work_of_art\/letters+and+records+received"
+          },
+          {
+            "value": "entity:WORK_OF_ART",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Letters and Records Received",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1113,2313,734,47"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/9408cb5c-1973-4e24-84ac-4dedb5d3301e",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Federal",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/federal"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=782,2631,175,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/4d95a31b-1bf5-4b8f-8ac1-c91484e32a83",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/washington"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Washington",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1326,2628,267,43"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/f1d67fa4-bced-4d67-a07c-8575c8fd433d",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Cimarron",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:org\/cimarron"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=2222,2623,193,36"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/add7f1b7-6e41-407a-9376-766f0d893539",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Abiquiu Agencies",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:org\/abiquiu+agencies"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=887,2680,429,48"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/641db665-fd73-4d1b-8794-54ff5c24cb89",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:norp\/pueblo+indians"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Pueblo Indians",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1247,2936,358,38"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/ffc30ef7-d0cf-426b-8386-3abd3d89e950",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:date\/1874+and+1879"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "1874 and 1879",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:DATE",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1633,2932,551,40"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/b7bd665b-d2e7-4c47-b25c-0a865987a7c0",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:law\/%22+letters+received%22"
+          },
+          {
+            "value": "entity:LAW",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "\" Letters Received\"",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1429,2981,556,45"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/6988c1c8-5dcc-401c-9cf6-d9fc4625a36a",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Letters Received",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:person\/letters+received"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=792,3144,421,35"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/df843b97-b063-4309-b85d-6b0c6cdfdec3",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/washington"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Washington",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=2041,3290,271,43"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/01f02ec8-fc74-4b3a-9b82-9925ee22e1ec",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "D. C.",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:person\/d.+c."
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=796,3349,116,35"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/50046d7a-e955-4b06-871d-8f7bc721bc8a",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:person\/abiquiu+agency"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Abiquiu Agency",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1555,3396,379,51"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/e52f092f-6bcc-47e7-a6bf-219aa3988081",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "AL A",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:org\/al+a"
+          },
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1009,3617,153,41"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/d9175b95-125c-48e0-ab43-462990695bdb",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:GPE",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:gpe\/lic+a"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "LIC A",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=2108,3611,143,41"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/7b1742d8-12be-429f-9f36-82a59164a9c5",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Indians",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:tribe\/indians"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1779,1239,198,47"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/de02fc04-a341-4f33-93ce-f6431d94c3ab",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Indians",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:NORP",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/virtual:tribe\/indians"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1779,1239,198,47"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/bd1c7a72-3bd6-4846-9271-9fb6c7f3e347",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/org\/pueblo+agency"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Pueblo Agency",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1858,982,421,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/638cee2d-4aac-45b0-8c56-170283b4626f",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/org\/pueblo+agency"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Pueblo Agency",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1858,982,421,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/66855b4e-18c3-4300-95c0-3ed36eeeedbf",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Jicarilla Agency",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/org\/jicarilla+agency"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1492,1031,426,43"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/45e792fe-7a76-49ec-b803-cfbea51c5041",
+        "type": "Annotation",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Jicarilla Agency",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:PERSON",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/org\/jicarilla+agency"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1492,1031,426,43"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/fe252fe3-1704-4705-829e-155560a7d0eb",
+        "type": "Annotation",
+        "label": "san ildefonso",
+        "generator": "http:\/\/omeka.dlcs-ida.org\/api\/item_sets\/725",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/tribe\/san+ildefonso"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "san ildefonso",
+            "purpose": "tagging"
+          }
+        ],
+        "target": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9",
+        "motivation": {
+          "id": "oa:tagging",
+          "label": "Tagging"
+        }
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/85a535e4-faa4-4a16-87d9-30ff77af6a77",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/org\/jicarilla+subagency"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Jicarilla Subagency",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1194,933,575,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/bec6587a-26f2-4877-8c4d-12901d46ddc7",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/org\/jicarilla+subagency"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Jicarilla Subagency",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+            "value": "xywh=1194,933,575,42"
+          },
+          "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/48ba141d-7c5e-405c-8fff-96ad9b98f9f0",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/org\/jicarilla+subagency"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Jicarilla Subagency",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+              "value": "xywh=2317,930,70,41"
+            },
+            "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+              "value": "xywh=777,988,478,42"
+            },
+            "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/0e17c572-23ad-4947-8989-17791436dd62",
+        "type": "Annotation",
+        "body": [
+          {
+            "value": "entity:ORG",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application\/html",
+            "purpose": "tagging",
+            "source": "https:\/\/omeka.dlcs-ida.org\/s\/ida\/page\/topics\/org\/jicarilla+subagency"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text\/plain",
+            "value": "Jicarilla Subagency",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+              "value": "xywh=2317,930,70,41"
+            },
+            "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/manifest",
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http:\/\/www.w3.org\/TR\/media-frags\/",
+              "value": "xywh=777,988,478,42"
+            },
+            "source": "https:\/\/presley.dlcs-ida.org\/iiif\/idatest01\/_roll_M-1304_27_cvs-6-16\/canvas\/c9"
+          }
+        ],
+        "motivation": "tagging"
+      }
+    ],
+    "partOf": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/",
+    "startIndex": 0
+  },
+  "last": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/?page=0&desc=1",
+  "total": 69
+}

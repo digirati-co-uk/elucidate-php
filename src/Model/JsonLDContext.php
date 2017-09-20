@@ -12,11 +12,14 @@ trait JsonLDContext
         ];
     }
 
+    abstract public function getInternalHeaders() : array;
+
     public function getHeaders(): array
     {
-        return [
+        $headers = $this->getInternalHeaders();
+        return array_merge([
             'Accept' => 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"',
             'Content-Type' => 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"',
-        ];
+        ], $headers);
     }
 }

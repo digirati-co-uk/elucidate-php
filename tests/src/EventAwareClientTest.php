@@ -321,6 +321,6 @@ class EventAwareClientTest extends TestCase
 
         $true = $this->client->deleteAnnotation($annotation);
 
-        $this->assertTrue($true);
+        $this->assertNotNull($true);
     }
 }

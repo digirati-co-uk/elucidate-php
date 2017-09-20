@@ -2,6 +2,8 @@
 
 namespace Elucidate\Model;
 
+use Psr\Http\Message\ResponseInterface;
+
 trait SerializeToJsonLD
 {
     abstract public function getContext();
@@ -47,5 +49,11 @@ trait SerializeToJsonLD
         $data = json_decode($json, true);
 
         return self::fromArray($data);
+    }
+
+    public static function fromResponse(ResponseInterface $response)
+    {
+        // @todo flesh out model to include eTag and other data inside of the response that is not part of the body.
+        return static::fromJson($response->getBody());
     }
 }

@@ -21,21 +21,21 @@ class Client implements ClientInterface
 
     public function getContainer($idOrContainer)
     {
-        return Container::fromJson(
+        return Container::fromResponse(
             $this->client->get((string)$idOrContainer . '/')
         );
     }
 
     public function createContainer(Container $container)
     {
-        return Container::fromJson(
+        return Container::fromResponse(
             $this->client->post($this->client->getBaseUri(), $container)
         );
     }
 
     public function getAnnotation($container, $annotation)
     {
-        return Annotation::fromJson(
+        return Annotation::fromResponse(
             $this->client->get($annotation)
         )->withContainer($container);
     }
@@ -47,7 +47,7 @@ class Client implements ClientInterface
             throw new AnnotationOrphanException();
         }
 
-        return Annotation::fromJson(
+        return Annotation::fromResponse(
             $this->client->post($container . '/', $annotation)
         )->withContainer($container);
     }
@@ -59,7 +59,7 @@ class Client implements ClientInterface
             throw new AnnotationOrphanException();
         }
 
-        return Annotation::fromJson(
+        return Annotation::fromResponse(
             $this->client->put($annotation, $annotation)
         )->withContainer($container);
     }

@@ -171,9 +171,9 @@ class ClientTest extends PHPUnit_Framework_TestCase
             'value' => 'I like this page! Updated',
         ], 'http://www.example.com/index.html');
 
-        $true = $this->client->deleteAnnotation($annotation);
+        $deleted = $this->client->deleteAnnotation($annotation);
 
-        $this->assertTrue($true);
+        $this->assertNotNull($deleted);
     }
 
     public function test_can_search()

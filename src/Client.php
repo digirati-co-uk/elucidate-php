@@ -35,6 +35,12 @@ class Client implements ClientInterface
 
     public function getAnnotation($container, $annotation): Annotation
     {
+        if ($annotation instanceof Annotation && $annotation->getContainer() === null) {
+            $annotation->withContainer($container);
+        }
+        if (is_string($annotation) && strpos($annotation, '/') === false) {
+            $annotation = $container . '/' . $annotation;
+        }
         return Annotation::fromResponse(
             $this->client->get($annotation)
         )->withContainer($container);

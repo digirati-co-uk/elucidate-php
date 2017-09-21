@@ -21,8 +21,10 @@ class Client implements ClientInterface
 
     public function getContainer($idOrContainer): Container
     {
+        $id = substr((string) $idOrContainer, -1, 1) === '/' ? (string)$idOrContainer : $idOrContainer . '/';
+
         return Container::fromResponse(
-            $this->client->get((string)$idOrContainer . '/')
+            $this->client->get($id)
         );
     }
 

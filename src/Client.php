@@ -35,6 +35,19 @@ class Client implements ClientInterface
         );
     }
 
+    public function updateContainer(Container $container): Container
+    {
+        return Container::fromResponse(
+            $this->client->put($container, $container)
+        );
+    }
+
+    public function deleteContainer(Container $container)
+    {
+        return $this->client->delete($container);
+    }
+
+
     public function getAnnotation($container, $annotation): Annotation
     {
         if ($annotation instanceof Annotation && $annotation->getContainer() === null) {

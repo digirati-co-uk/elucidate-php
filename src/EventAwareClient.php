@@ -134,4 +134,30 @@ class EventAwareClient implements ClientInterface
     {
         return $this->client->search($query);
     }
+
+    public function updateContainer(Container $container): Container
+    {
+        return $this->containerLifecycle(
+            $container,
+            ContainerLifecycleEvent::PRE_UPDATE,
+            ContainerLifecycleEvent::UPDATE,
+            function ($container) {
+                return $this->client->updateContainer($container);
+            }
+        );
+    }
+
+    public function deleteContainer(Container $container)
+    {
+        $call = false;
+        $this->annotationLifecycle(
+            $container,
+            ContainerLifecycleEvent::PRE_DELETE,
+            ContainerLifecycleEvent::DELETE,
+            function ($container) use (&$call) {
+                $call = $this->client->deleteContainer($container);
+            }
+        );
+        return $call;
+    }
 }

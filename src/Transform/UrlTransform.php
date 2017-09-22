@@ -28,7 +28,15 @@ class UrlTransform
     public function transformAnnotation(Annotation $annotation) : Annotation
     {
         $fields = $annotation->jsonSerialize();
+
+        // JSON.id
         $fields['id'] = $this->transformUri($annotation['id']);
+
+        // JSON.via
+        if (isset($fields['via'])) {
+            $fields['via'] = $this->transformUri($annotation['via']);
+        }
+
         return Annotation::fromArray($fields);
     }
 

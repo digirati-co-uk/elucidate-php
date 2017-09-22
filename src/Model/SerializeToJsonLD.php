@@ -23,6 +23,9 @@ trait SerializeToJsonLD
                 $json[$key] = $metaData;
             }
         }
+        if ($json['id'] === null) {
+            unset($json['id']);
+        }
 
         return $json;
     }

@@ -22,7 +22,6 @@ class ContainerTest extends PHPUnit_Framework_TestCase
         $json = '{
             "label": "Something label",
             "type": "AnnotationCollection",
-            "id": null,
             "@context": [
                 "http:\/\/www.w3.org\/ns\/anno.jsonld",
                 "http:\/\/www.w3.org\/ns\/ldp.jsonld"

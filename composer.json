@@ -15,6 +15,9 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "scripts": {
+        "codestyle": "php-cs-fixer fix ./src && php-cs-fixer fix ./tests"
+    },
     "suggest": {
         "zendframework/zend-http": "Zend http client for making requests",
         "guzzlehttp/guzzle": "Guzzle http client for making requests"

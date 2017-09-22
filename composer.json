@@ -22,7 +22,8 @@
     "require-dev": {
         "guzzlehttp/guzzle": "6.2.*",
         "zendframework/zend-http": "^2.5.4",
-        "phpunit/phpunit": "^5.5"
+        "phpunit/phpunit": "^5.5",
+        "friendsofphp/php-cs-fixer": "^2.6"
     },
     "require": {
         "guzzlehttp/psr7": "^1.4",

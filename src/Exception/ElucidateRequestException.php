@@ -3,7 +3,6 @@
 
 namespace Elucidate\Exception;
 
-
 use GuzzleHttp\Exception\RequestException;
 
 class ElucidateRequestException extends RequestException
@@ -18,5 +17,4 @@ class ElucidateRequestException extends RequestException
             $requestException->getHandlerContext()
         );
     }
-
 }

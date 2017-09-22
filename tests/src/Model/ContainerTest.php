@@ -80,4 +80,11 @@ class ContainerTest extends PHPUnit_Framework_TestCase
 
         $this->assertInstanceOf(SearchQuery::class, $search->getNextSearchQuery());
     }
+
+    public function test_error_response_returns_null()
+    {
+        $container = Container::fromJson('{"errors": {"error": "something went wrong"}}');
+
+        $this->assertNull($container);
+    }
 }

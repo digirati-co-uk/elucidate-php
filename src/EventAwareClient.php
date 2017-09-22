@@ -8,6 +8,7 @@ use Elucidate\Event\ContainerLifecycleEvent;
 use Elucidate\Model\Annotation;
 use Elucidate\Model\Container;
 use Elucidate\Search\SearchQuery;
+use Psr\Http\Message\ResponseInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class EventAwareClient implements ClientInterface
@@ -130,6 +131,14 @@ class EventAwareClient implements ClientInterface
         return $call;
     }
 
+    public function performSearch(SearchQuery $query) : ResponseInterface
+    {
+        return $this->client->performSearch($query);
+    }
+
+    /**
+     * @deprecated
+     */
     public function search(SearchQuery $query)
     {
         return $this->client->search($query);

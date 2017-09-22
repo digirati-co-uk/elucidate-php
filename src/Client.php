@@ -7,6 +7,7 @@ use Elucidate\Exception\AnnotationOrphanException;
 use Elucidate\Model\Annotation;
 use Elucidate\Model\Container;
 use Elucidate\Search\SearchQuery;
+use Psr\Http\Message\ResponseInterface;
 
 class Client implements ClientInterface
 {
@@ -90,12 +91,17 @@ class Client implements ClientInterface
         return $this->client->delete($annotation);
     }
 
-    public function search(SearchQuery $query, $asResponse = false)
+    /**
+     * @deprecated
+     */
+    public function search(SearchQuery $query)
     {
-        $response = $this->client->get($query);
-        if ($asResponse) {
-            return $response;
-        }
+        $response = $this->performSearch($query);
         return (string) $response->getBody();
+    }
+
+    public function performSearch(SearchQuery $query): ResponseInterface
+    {
+        return $this->client->get((string)$query);
     }
 }

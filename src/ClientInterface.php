@@ -4,6 +4,7 @@ namespace Elucidate;
 use Elucidate\Model\Annotation;
 use Elucidate\Model\Container;
 use Elucidate\Search\SearchQuery;
+use Psr\Http\Message\ResponseInterface;
 
 interface ClientInterface
 {
@@ -23,5 +24,10 @@ interface ClientInterface
 
     public function deleteAnnotation(Annotation $annotation);
 
+    /**
+     * @deprecated
+     */
     public function search(SearchQuery $query);
+
+    public function performSearch(SearchQuery $query) : ResponseInterface;
 }

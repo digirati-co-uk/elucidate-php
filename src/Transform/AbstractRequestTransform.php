@@ -23,5 +23,4 @@ abstract class AbstractRequestTransform
     }
 
     abstract public function transform(ServerRequestInterface $request);
-
 }

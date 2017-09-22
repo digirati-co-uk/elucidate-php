@@ -8,6 +8,7 @@ use Elucidate\Event\ContainerLifecycleEvent;
 use Elucidate\Model\Annotation;
 use Elucidate\Model\Container;
 use Elucidate\Search\SearchQuery;
+use Psr\Http\Message\ResponseInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class EventAwareClient implements ClientInterface
@@ -55,7 +56,7 @@ class EventAwareClient implements ClientInterface
         return $postEvent->annotationExists() ? $postEvent->getAnnotation() : $container;
     }
 
-    public function getContainer($idOrContainer)
+    public function getContainer($idOrContainer): Container
     {
         return $this->containerLifecycle(
             $idOrContainer,
@@ -67,7 +68,7 @@ class EventAwareClient implements ClientInterface
         );
     }
 
-    public function createContainer(Container $container)
+    public function createContainer(Container $container): Container
     {
         return $this->containerLifecycle(
             $container,
@@ -79,7 +80,7 @@ class EventAwareClient implements ClientInterface
         );
     }
 
-    public function getAnnotation($container, $annotation)
+    public function getAnnotation($container, $annotation): Annotation
     {
         return $this->annotationLifecycle(
             $annotation,
@@ -130,8 +131,42 @@ class EventAwareClient implements ClientInterface
         return $call;
     }
 
+    public function performSearch(SearchQuery $query) : ResponseInterface
+    {
+        return $this->client->performSearch($query);
+    }
+
+    /**
+     * @deprecated
+     */
     public function search(SearchQuery $query)
     {
-        return $this->search($query);
+        return $this->client->search($query);
+    }
+
+    public function updateContainer(Container $container): Container
+    {
+        return $this->containerLifecycle(
+            $container,
+            ContainerLifecycleEvent::PRE_UPDATE,
+            ContainerLifecycleEvent::UPDATE,
+            function ($container) {
+                return $this->client->updateContainer($container);
+            }
+        );
+    }
+
+    public function deleteContainer(Container $container)
+    {
+        $call = false;
+        $this->annotationLifecycle(
+            $container,
+            ContainerLifecycleEvent::PRE_DELETE,
+            ContainerLifecycleEvent::DELETE,
+            function ($container) use (&$call) {
+                $call = $this->client->deleteContainer($container);
+            }
+        );
+        return $call;
     }
 }

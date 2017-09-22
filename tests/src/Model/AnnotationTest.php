@@ -113,4 +113,11 @@ class AnnotationTest extends PHPUnit_Framework_TestCase
         $this->assertContains('http://www.w3.org/ns/ldp.jsonld', $annotation['@context']);
         $this->assertContains('124', $annotation['container']['id']);
     }
+
+    public function test_error_response_returns_null()
+    {
+        $annotation = Annotation::fromJson('{"errors": {"error": "something went wrong"}}');
+
+        $this->assertNull($annotation);
+    }
 }

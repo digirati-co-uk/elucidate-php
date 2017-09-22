@@ -22,7 +22,6 @@ class ContainerTest extends PHPUnit_Framework_TestCase
         $json = '{
             "label": "Something label",
             "type": "AnnotationCollection",
-            "id": null,
             "@context": [
                 "http:\/\/www.w3.org\/ns\/anno.jsonld",
                 "http:\/\/www.w3.org\/ns\/ldp.jsonld"
@@ -80,5 +79,12 @@ class ContainerTest extends PHPUnit_Framework_TestCase
         );
 
         $this->assertInstanceOf(SearchQuery::class, $search->getNextSearchQuery());
+    }
+
+    public function test_error_response_returns_null()
+    {
+        $container = Container::fromJson('{"errors": {"error": "something went wrong"}}');
+
+        $this->assertNull($container);
     }
 }

@@ -25,5 +25,4 @@ class SearchRequestTransformTest extends TestCase
         $search = $transform($request);
         $this->assertEquals((string) $search, 'services/search/target?fields=test_field&value=test_value');
     }
-
 }

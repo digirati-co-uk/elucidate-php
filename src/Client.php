@@ -7,6 +7,7 @@ use Elucidate\Exception\AnnotationOrphanException;
 use Elucidate\Model\Annotation;
 use Elucidate\Model\Container;
 use Elucidate\Search\SearchQuery;
+use Psr\Http\Message\ResponseInterface;
 
 class Client implements ClientInterface
 {
@@ -19,22 +20,43 @@ class Client implements ClientInterface
     }
 
 
-    public function getContainer($idOrContainer)
+    public function getContainer($idOrContainer): Container
     {
+        $id = substr($idOrContainer, -1, 1) === '/' ? (string)$idOrContainer : $idOrContainer . '/';
+
         return Container::fromResponse(
-            $this->client->get((string)$idOrContainer . '/')
+            $this->client->get($id)
         );
     }
 
-    public function createContainer(Container $container)
+    public function createContainer(Container $container): Container
     {
         return Container::fromResponse(
             $this->client->post($this->client->getBaseUri(), $container)
         );
     }
 
-    public function getAnnotation($container, $annotation)
+    public function updateContainer(Container $container): Container
     {
+        return Container::fromResponse(
+            $this->client->put($container, $container)
+        );
+    }
+
+    public function deleteContainer(Container $container)
+    {
+        return $this->client->delete($container);
+    }
+
+
+    public function getAnnotation($container, $annotation): Annotation
+    {
+        if ($annotation instanceof Annotation && $annotation->getContainer() === null) {
+            $annotation->withContainer($container);
+        }
+        if (is_string($annotation) && strpos($annotation, '/') === false) {
+            $annotation = $container . '/' . $annotation;
+        }
         return Annotation::fromResponse(
             $this->client->get($annotation)
         )->withContainer($container);
@@ -69,8 +91,17 @@ class Client implements ClientInterface
         return $this->client->delete($annotation);
     }
 
+    /**
+     * @deprecated
+     */
     public function search(SearchQuery $query)
     {
-        return $this->client->get($query);
+        $response = $this->performSearch($query);
+        return (string) $response->getBody();
+    }
+
+    public function performSearch(SearchQuery $query): ResponseInterface
+    {
+        return $this->client->get((string)$query);
     }
 }

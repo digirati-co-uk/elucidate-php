@@ -5,6 +5,8 @@ namespace Elucidate;
 use Elucidate\Adapter\HttpAdapter;
 use Elucidate\Event\AnnotationLifecycleEvent;
 use Elucidate\Event\ContainerLifecycleEvent;
+use Elucidate\Event\ElucidateEvent;
+use Elucidate\Exception\ElucidateUncaughtException;
 use Elucidate\Model\Annotation;
 use Elucidate\Model\Container;
 use Elucidate\Search\SearchQuery;
@@ -35,6 +37,8 @@ class EventAwareClient implements ClientInterface
         /** @var ContainerLifecycleEvent $preEvent */
         $preEvent = $this->ev->dispatch($before, new ContainerLifecycleEvent($idOrContainer));
 
+        $this->validateEvent($preEvent);
+
         $container = $preEvent->containerExists() ? $preEvent->getContainer() : $args ? $action($idOrContainer, ...$args) : $action($idOrContainer);
 
         /** @var ContainerLifecycleEvent $postEvent */
@@ -43,10 +47,19 @@ class EventAwareClient implements ClientInterface
         return $postEvent->containerExists() ? $postEvent->getContainer() : $container;
     }
 
+    private function validateEvent(ElucidateEvent $preEvent)
+    {
+        if ($preEvent->isPropagationStopped() && $preEvent->isValid() === false) {
+            throw new ElucidateUncaughtException($preEvent->getException()->getMessage(), $preEvent->getException());
+        }
+    }
+
     private function annotationLifecycle($idOrContainer, string $before, string $after, callable $action, ...$args)
     {
         /** @var AnnotationLifecycleEvent $preEvent */
         $preEvent = $this->ev->dispatch($before, new AnnotationLifecycleEvent($idOrContainer));
+
+        $this->validateEvent($preEvent);
 
         $container = $preEvent->annotationExists() ? $preEvent->getAnnotation() : $args ? $action($idOrContainer, ...$args) : $action($idOrContainer);
 

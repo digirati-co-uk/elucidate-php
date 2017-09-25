@@ -16,7 +16,7 @@ class SearchCustom implements SearchQuery
         return $this->path;
     }
 
-    public function __toString() : string
+    public function __toString(): string
     {
         return $this->getPath();
     }

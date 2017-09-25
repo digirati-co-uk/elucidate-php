@@ -35,8 +35,9 @@ class GuzzleHttpAdapter implements HttpAdapter
             throw ElucidateRequestException::fromRequestException($requestException);
         } catch (Throwable $e) {
             if ($this->suppressUncaughtExceptions === false) {
-                throw new ElucidateUncaughtException("Uncaught exception", 500, $e);
+                throw new ElucidateUncaughtException('Uncaught exception', 500, $e);
             }
+
             return new JsonResponse(['errors' => ['error' => $e->getMessage()]], 500);
         }
     }
@@ -69,7 +70,7 @@ class GuzzleHttpAdapter implements HttpAdapter
         $body = json_encode($request);
 
         try {
-            return $this->request('delete', (string)$request, [
+            return $this->request('delete', (string) $request, [
                 'headers' => $headers,
                 'body' => $body,
             ]);

@@ -33,7 +33,7 @@ class AuthorQueryBuilder
     private $path;
 
     /**
-     * The type of field
+     * The type of field.
      *
      * @var string
      */
@@ -48,6 +48,7 @@ class AuthorQueryBuilder
 
     /**
      * AuthorQueryBuilder constructor.
+     *
      * @param string $path
      */
     public function __construct(string $path)
@@ -80,11 +81,13 @@ class AuthorQueryBuilder
      * reflect which part of the annotation will be searched for the search term.
      *
      * @param string $level
+     *
      * @return $this
      */
     public function atLevel(string $level)
     {
         $this->levels[] = $level;
+
         return $this;
     }
 
@@ -96,12 +99,13 @@ class AuthorQueryBuilder
     public function atAllLevels()
     {
         $this->levels = ['body', 'target', 'annotation'];
+
         return $this;
     }
 
     public function build(): ServiceQuery
     {
-        Assertion::notEmpty($this->levels, "Must provide search levels to query at");
+        Assertion::notEmpty($this->levels, 'Must provide search levels to query at');
         Assertion::allInArray($this->levels, ['body', 'target', 'annotation'], 'Levels can only be one of: body, target, annotation');
         Assertion::notNull($this->type, 'Must provide a type to query by.');
         Assertion::notNull($this->value, 'Must provide a search term');
@@ -110,7 +114,7 @@ class AuthorQueryBuilder
             'levels' => implode($this->levels, ','),
             'type' => $this->type,
             'value' => $this->value,
-            'strict' => $this->strict ? 'true' : 'false'
+            'strict' => $this->strict ? 'true' : 'false',
         ];
 
         return new ServiceQuery($this->path, $parameters);
@@ -130,6 +134,7 @@ class AuthorQueryBuilder
      * Filter this query by {@code email} fields matching the given {@code value}.
      *
      * @param string $value
+     *
      * @return $this
      */
     public function withEmail(string $value)
@@ -141,6 +146,7 @@ class AuthorQueryBuilder
      * Filter this query by {@code emailsha1} fields matching the given {@code value}.
      *
      * @param string $value
+     *
      * @return $this
      */
     public function withEmailSha1(string $value)
@@ -152,6 +158,7 @@ class AuthorQueryBuilder
      * Filter this query by {@code id} fields matching the given {@code value}.
      *
      * @param string $value
+     *
      * @return $this
      */
     public function withId(string $value)
@@ -163,6 +170,7 @@ class AuthorQueryBuilder
      * Filter this query by {@code name} fields matching the given {@code value}.
      *
      * @param string $value
+     *
      * @return $this
      */
     public function withName(string $value)
@@ -174,6 +182,7 @@ class AuthorQueryBuilder
      * Filter this query by {@code nickname} fields matching the given {@code value}.
      *
      * @param string $value
+     *
      * @return $this
      */
     public function withNickname(string $value)

@@ -20,7 +20,7 @@ class UrlTransformTest extends TestCase
 
     public function test_url_transform_full_container()
     {
-        $containerJson = file_get_contents(__DIR__ . '/container.json');
+        $containerJson = file_get_contents(__DIR__.'/container.json');
         $container = Container::fromJson($containerJson);
 
         $transform = new UrlTransform('https://yahoo.com');

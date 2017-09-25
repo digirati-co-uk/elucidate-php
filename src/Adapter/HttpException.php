@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Elucidate\Adapter;
 
 use Exception;

@@ -63,6 +63,7 @@ trait SerializeToJsonLD
     public function setHeaders($headers)
     {
         $this->httpInternalHeaders = $headers;
+
         return $this;
     }
 
@@ -70,6 +71,7 @@ trait SerializeToJsonLD
     {
         return $this->httpInternalHeaders;
     }
+
     public static function fromResponse(ResponseInterface $response)
     {
         // @todo flesh out model to include eTag and other data inside of the response that is not part of the body.

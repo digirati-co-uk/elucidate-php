@@ -21,7 +21,7 @@ class SearchByBody implements SearchQuery
         $this->strict = $strict;
     }
 
-    public function getPath() : string
+    public function getPath(): string
     {
         return 'services/search/body';
     }

@@ -3,7 +3,6 @@
 namespace Elucidate\Tests;
 
 use Elucidate\Client;
-use Elucidate\Exception\ElucidateRequestException;
 use Elucidate\Model\Annotation;
 use Elucidate\Model\Container;
 use Elucidate\Search\SearchByBody;

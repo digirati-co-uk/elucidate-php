@@ -16,11 +16,13 @@ trait StrictQueryAware
      * will be returned.
      *
      * @param bool $strict
+     *
      * @return $this
      */
     public function strict(bool $strict)
     {
         $this->strict = $strict;
+
         return $this;
     }
 }

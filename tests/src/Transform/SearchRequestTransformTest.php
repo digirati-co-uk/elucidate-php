@@ -2,10 +2,7 @@
 
 namespace Elucidate\Tests\Transform;
 
-use Elucidate\Model\Annotation;
-use Elucidate\Model\Container;
 use Elucidate\Transform\SearchRequestTransform;
-use Elucidate\Transform\UrlTransform;
 use PHPUnit\Framework\TestCase;
 use Zend\Diactoros\ServerRequestFactory;
 
@@ -14,11 +11,11 @@ class SearchRequestTransformTest extends TestCase
     public function test_url_transform_basic_annotation()
     {
         $request = ServerRequestFactory::fromGlobals([
-            'REQUEST_URI' => 'https://elucidate.com/services/search/target'
+            'REQUEST_URI' => 'https://elucidate.com/services/search/target',
         ], [
             // ?fields=test_field&value=test_value
             'fields' => 'test_field',
-            'value' => 'test_value'
+            'value' => 'test_value',
         ]);
         $transform = new SearchRequestTransform();
 

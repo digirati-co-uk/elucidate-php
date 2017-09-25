@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Elucidate\Exception;
 
 use GuzzleHttp\Exception\RequestException;

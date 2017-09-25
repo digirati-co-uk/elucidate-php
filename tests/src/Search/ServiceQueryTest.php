@@ -8,7 +8,7 @@ class ServiceQueryTest extends PHPUnit_Framework_TestCase
     {
         $serviceQuery = new ServiceQuery('s', [
             'abc' => null,
-            'def' => 'non-null'
+            'def' => 'non-null',
         ]);
 
         $queryString = (string) $serviceQuery;
@@ -19,8 +19,8 @@ class ServiceQueryTest extends PHPUnit_Framework_TestCase
     {
         $serviceQuery = new ServiceQuery('s', [
             'abc' => '',
-            'def' => 'non-empty'
-        ]) ;
+            'def' => 'non-empty',
+        ]);
 
         $queryString = (string) $serviceQuery;
         $this->assertContains('abc=', $queryString);

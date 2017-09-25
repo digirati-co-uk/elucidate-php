@@ -1,9 +1,7 @@
 <?php
 
-
 namespace Elucidate\Transform;
 
-use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Http\Request as ZendRequest;
 use Zend\Psr7Bridge\Psr7ServerRequest;
@@ -16,7 +14,7 @@ abstract class AbstractRequestTransform
             $request = Psr7ServerRequest::fromZend($request);
         }
         if (!$request instanceof ServerRequestInterface) {
-            throw new \TypeError("Invalid Request provided, must implement PSR7");
+            throw new \TypeError('Invalid Request provided, must implement PSR7');
         }
 
         return $this->transform($request);

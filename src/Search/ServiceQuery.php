@@ -22,6 +22,6 @@ class ServiceQuery implements SearchQuery
 
     public function __toString(): string
     {
-        return $this->servicePath . '?' . http_build_query($this->parameters);
+        return $this->servicePath.'?'.http_build_query($this->parameters);
     }
 }

@@ -19,10 +19,9 @@ class Client implements ClientInterface
         $this->client = $client;
     }
 
-
     public function getContainer($idOrContainer): Container
     {
-        $id = substr($idOrContainer, -1, 1) === '/' ? (string)$idOrContainer : $idOrContainer . '/';
+        $id = substr($idOrContainer, -1, 1) === '/' ? (string) $idOrContainer : $idOrContainer.'/';
 
         return Container::fromResponse(
             $this->client->get($id)
@@ -48,15 +47,15 @@ class Client implements ClientInterface
         return $this->client->delete($container);
     }
 
-
     public function getAnnotation($container, $annotation): Annotation
     {
         if ($annotation instanceof Annotation && $annotation->getContainer() === null) {
             $annotation->withContainer($container);
         }
         if (is_string($annotation) && strpos($annotation, '/') === false) {
-            $annotation = $container . '/' . $annotation;
+            $annotation = $container.'/'.$annotation;
         }
+
         return Annotation::fromResponse(
             $this->client->get($annotation)
         )->withContainer($container);
@@ -70,7 +69,7 @@ class Client implements ClientInterface
         }
 
         return Annotation::fromResponse(
-            $this->client->post($container . '/', $annotation)
+            $this->client->post($container.'/', $annotation)
         )->withContainer($container);
     }
 
@@ -97,11 +96,12 @@ class Client implements ClientInterface
     public function search(SearchQuery $query)
     {
         $response = $this->performSearch($query);
+
         return (string) $response->getBody();
     }
 
     public function performSearch(SearchQuery $query): ResponseInterface
     {
-        return $this->client->get((string)$query);
+        return $this->client->get((string) $query);
     }
 }

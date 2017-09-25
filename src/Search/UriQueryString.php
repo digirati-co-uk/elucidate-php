@@ -4,7 +4,7 @@ namespace Elucidate\Search;
 
 trait UriQueryString
 {
-    abstract public function getPath() : string;
+    abstract public function getPath(): string;
 
     public function __toString(): string
     {

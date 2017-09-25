@@ -22,10 +22,11 @@ class UrlTransform
         $newUrl->setHost($this->uri->getHost());
         $newUrl->setPort($this->uri->getPort());
         $newUrl->setScheme($this->uri->getScheme());
+
         return $newUrl->toString();
     }
 
-    public function transformAnnotation(Annotation $annotation) : Annotation
+    public function transformAnnotation(Annotation $annotation): Annotation
     {
         $fields = $annotation->jsonSerialize();
 
@@ -40,7 +41,7 @@ class UrlTransform
         return Annotation::fromArray($fields);
     }
 
-    public function transformContainer(Container $container) : Container
+    public function transformContainer(Container $container): Container
     {
         $fields = $container->jsonSerialize();
         // JSON.id
@@ -50,6 +51,7 @@ class UrlTransform
         if (isset($fields['first']['items'])) {
             $fields['first']['items'] = array_map(function ($annotation) {
                 $annotation['id'] = $this->transformUri($annotation['id']);
+
                 return $annotation;
             }, $fields['first']['items']);
         }
@@ -75,6 +77,6 @@ class UrlTransform
         if ($annotationOrContainer instanceof Container) {
             return $this->transformContainer($annotationOrContainer);
         }
-        throw new InvalidArgumentException("Unsupported type in Url Transform: " . get_class($annotationOrContainer));
+        throw new InvalidArgumentException('Unsupported type in Url Transform: '.get_class($annotationOrContainer));
     }
 }

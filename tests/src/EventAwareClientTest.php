@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Elucidate\Tests;
 
 use Elucidate\Client;
@@ -304,6 +303,86 @@ class EventAwareClientTest extends TestCase
         $this->assertEquals($annotation['body'], $newAnnotation['body']);
         $this->assertEquals($annotation['target'], $newAnnotation['target']);
         $this->assertEquals($annotation['id'], $newAnnotation['id']);
+    }
+
+    public function test_post_can_be_stopped()
+    {
+        $this->http->setPost(function ($endpoint) {
+            return '{
+              "@context": "http://www.w3.org/ns/anno.jsonld",
+              "id": "http://example.org/w3c/123/456",
+              "type": "Annotation",
+              "body": {
+                "type": "TextualBody",
+                "value": "I like this page!"
+              },
+              "target": "http://www.example.com/index.html"
+            }';
+        });
+        $this->ev->addListener(
+            AnnotationLifecycleEvent::CREATE,
+            $create = new WasCalled('annotationListener')
+        );
+        $this->ev->addListener(
+            AnnotationLifecycleEvent::PRE_CREATE,
+            $preCreate = new WasCalled('annotationListener', function (AnnotationLifecycleEvent $e) {
+                $e->preventPostProcess();
+            })
+        );
+
+        $annotation = new Annotation(null, [
+            'type' => 'TextualBody',
+            'value' => 'I like this page! Updated',
+        ], 'http://www.example.com/index.html');
+        $annotation->withContainer('http://example.org/w3c/123');
+
+        $newAnnotation = $this->client->createAnnotation($annotation);
+
+        $this->assertEquals($newAnnotation['id'], 'http://example.org/w3c/123/456');
+
+        $preCreate->assertWasCalledExactly(1);
+        $create->assertWasNotCalled();
+    }
+
+    public function test_post_can_be_replaced_and_stopped()
+    {
+        $this->http->setPost(function ($endpoint) {
+            return '{
+              "@context": "http://www.w3.org/ns/anno.jsonld",
+              "id": "http://example.org/w3c/123/456",
+              "type": "Annotation",
+              "body": {
+                "type": "TextualBody",
+                "value": "I like this page!"
+              },
+              "target": "http://www.example.com/index.html"
+            }';
+        });
+        $this->ev->addListener(
+            AnnotationLifecycleEvent::CREATE,
+            $create = new WasCalled('annotationListener')
+        );
+        $this->ev->addListener(
+            AnnotationLifecycleEvent::PRE_CREATE,
+            $preCreate = new WasCalled('annotationListener', function (AnnotationLifecycleEvent $e) {
+                $e->preventPostProcess();
+                $e->setAnnotation(new Annotation('http://example.org/omeka/123456789'));
+                $this->assertTrue($e->annotationExists());
+            })
+        );
+
+        $annotation = new Annotation(null, [
+            'type' => 'TextualBody',
+            'value' => 'I like this page! Updated',
+        ], 'http://www.example.com/index.html');
+        $annotation->withContainer('http://example.org/w3c/123');
+
+        $newAnnotation = $this->client->createAnnotation($annotation);
+
+        $this->assertEquals($newAnnotation['id'], 'http://example.org/omeka/123456789');
+
+        $preCreate->assertWasCalledExactly(1);
+        $create->assertWasNotCalled();
     }
 
     public function test_delete_annotation()

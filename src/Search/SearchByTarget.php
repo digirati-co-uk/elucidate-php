@@ -25,7 +25,7 @@ class SearchByTarget implements SearchQuery
         $this->t = $t;
     }
 
-    public function getPath() : string
+    public function getPath(): string
     {
         return 'services/search/target';
     }

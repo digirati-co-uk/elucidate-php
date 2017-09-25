@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Elucidate\Tests;
 
 use PHPUnit\Framework\TestCase;
@@ -24,6 +23,7 @@ class WasCalled
             return null;
         }
         $fn = $this->fn;
+
         return $fn(...$args);
     }
 
@@ -36,18 +36,18 @@ class WasCalled
     public function assertWasCalledAtLeast($int = 1)
     {
         $name = $this->name;
-        TestCase::assertThat($this->times >= $int, TestCase::isTrue(), "Failed asserting '$name' was called at least $int time(s), was called " . $this->times . " time(s)");
+        TestCase::assertThat($this->times >= $int, TestCase::isTrue(), "Failed asserting '$name' was called at least $int time(s), was called ".$this->times.' time(s)');
     }
 
     public function assertWasCalledExactly(int $times)
     {
         $name = $this->name;
-        TestCase::assertThat($this->times === $times, TestCase::isTrue(), "Failed asserting '$name' was called exactly $times time(s), was called " . $this->times . " time(s)");
+        TestCase::assertThat($this->times === $times, TestCase::isTrue(), "Failed asserting '$name' was called exactly $times time(s), was called ".$this->times.' time(s)');
     }
 
     public function assertWasNotCalled()
     {
         $name = $this->name;
-        TestCase::assertThat($this->times === 0, TestCase::isTrue(), "Failed asserting '$name' was called not called, was called " . $this->times . " time(s)");
+        TestCase::assertThat($this->times === 0, TestCase::isTrue(), "Failed asserting '$name' was called not called, was called ".$this->times.' time(s)');
     }
 }

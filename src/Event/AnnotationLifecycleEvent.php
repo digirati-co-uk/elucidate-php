@@ -29,19 +29,19 @@ class AnnotationLifecycleEvent extends ElucidateEvent
     public function setAnnotation(Annotation $annotation)
     {
         $this->setArgument('annotation', $annotation);
+
         return $this;
     }
 
     public function annotationExists(): bool
     {
-        return !!$this->hasArgument('annotation');
+        return (bool) $this->hasArgument('annotation');
     }
 
     public function getAnnotation(): Annotation
     {
         return $this->getArgument('annotation');
     }
-
 
     public static function supports($subject): bool
     {

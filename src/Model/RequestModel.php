@@ -6,5 +6,5 @@ use JsonSerializable;
 
 interface RequestModel extends JsonSerializable
 {
-    public function getHeaders() : array;
+    public function getHeaders(): array;
 }

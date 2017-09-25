@@ -35,7 +35,7 @@ class SearchResult
         return $this->container['first']['next'] ?? null;
     }
 
-    public function getTotalResults() : int
+    public function getTotalResults(): int
     {
         return $this->container['total'] ?? 0;
     }
@@ -47,6 +47,7 @@ class SearchResult
         }
 
         $items = $this->container['first']['items'];
+
         return new ArrayIterator(array_map([Annotation::class, 'fromArray'], $items));
     }
 }

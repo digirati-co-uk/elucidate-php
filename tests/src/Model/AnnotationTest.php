@@ -36,10 +36,10 @@ class AnnotationTest extends PHPUnit_Framework_TestCase
                 'type' => 'Software',
                 'name' => 'Code v2.1',
                 'homepage' => 'http://example.org/client1/homepage1',
-            ]
+            ],
         ]);
 
-        $this->assertEquals('123/', (string)$annotation);
+        $this->assertEquals('123/', (string) $annotation);
 
         $json = '{
             "type": "Annotation",

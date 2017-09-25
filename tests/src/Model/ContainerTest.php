@@ -58,13 +58,13 @@ class ContainerTest extends PHPUnit_Framework_TestCase
 
     public function test_can_load_container()
     {
-        $json = file_get_contents(__DIR__ . '/../../fixtures/container.json');
+        $json = file_get_contents(__DIR__.'/../../fixtures/container.json');
         Container::fromJson($json);
     }
 
     public function test_can_load_search_result()
     {
-        $json = file_get_contents(__DIR__ . '/../../fixtures/search.json');
+        $json = file_get_contents(__DIR__.'/../../fixtures/search.json');
         $search = new SearchResult(Container::fromJson($json));
 
         foreach ($search->getResults() as $result) {

@@ -97,8 +97,8 @@ final class AnnotationQueryBuilder
 
     public function build(): ServiceQuery
     {
-        Assertion::notNull($this->value, "Must specify a search term for an annotation query");
-        Assertion::notEmpty($this->fields, "Must specify fields for an annotation query");
+        Assertion::notNull($this->value, 'Must specify a search term for an annotation query');
+        Assertion::notEmpty($this->fields, 'Must specify fields for an annotation query');
         Assertion::allInArray($this->fields, ['id', 'source'], "Invalid fields given.  Expected 'id' or 'source'");
 
         $parameters = [
@@ -108,7 +108,7 @@ final class AnnotationQueryBuilder
             't' => $this->temporalSelector,
             'xywh' => $this->spatialSelector,
             'generator' => $this->generator,
-            'creator' => $this->creator
+            'creator' => $this->creator,
         ];
 
         return new ServiceQuery($this->path, $parameters);
@@ -126,11 +126,13 @@ final class AnnotationQueryBuilder
      * Filter this query by annotations that have the given creator.
      *
      * @param string $value
+     *
      * @return $this
      */
     public function withCreator(string $value)
     {
         $this->creator = $value;
+
         return $this;
     }
 
@@ -138,11 +140,13 @@ final class AnnotationQueryBuilder
      * Filter this query by annotations that have the given generator.
      *
      * @param string $value
+     *
      * @return $this
      */
     public function withGenerator(string $value)
     {
         $this->generator = $value;
+
         return $this;
     }
 
@@ -150,6 +154,7 @@ final class AnnotationQueryBuilder
      * Filter this query by annotations having the given {@code id} value.
      *
      * @param string $value
+     *
      * @return AnnotationQueryBuilder
      */
     public function withId(string $value)
@@ -161,6 +166,7 @@ final class AnnotationQueryBuilder
      * Filter this query by annotations having the given {@code source} value.
      *
      * @param string $value
+     *
      * @return AnnotationQueryBuilder
      */
     public function withSource(string $value)
@@ -172,11 +178,13 @@ final class AnnotationQueryBuilder
      * Filter this query by annotations which intersect with the given spatial selector.
      *
      * @param string $selector
+     *
      * @return $this
      */
     public function withSpatialDimensions(string $selector)
     {
         $this->spatialSelector = $selector;
+
         return $this;
     }
 
@@ -184,11 +192,13 @@ final class AnnotationQueryBuilder
      * Filter this query by annotations which intersect with the given temporal selector.
      *
      * @param string $selector
+     *
      * @return $this
      */
     public function withTemporalDimensions(string $selector)
     {
         $this->temporalSelector = $selector;
+
         return $this;
     }
 }

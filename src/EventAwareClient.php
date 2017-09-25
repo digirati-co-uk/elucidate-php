@@ -39,7 +39,11 @@ class EventAwareClient implements ClientInterface
 
         $this->validateEvent($preEvent);
 
-        $container = $preEvent->containerExists() ? $preEvent->getContainer() : $args ? $action($idOrContainer, ...$args) : $action($idOrContainer);
+        $container = $preEvent->containerExists() ? $preEvent->getContainer() : ($args ? $action($idOrContainer, ...$args) : $action($idOrContainer));
+
+        if ($preEvent->isPostProcessPrevented()) {
+            return $container;
+        }
 
         /** @var ContainerLifecycleEvent $postEvent */
         $postEvent = $this->ev->dispatch($after, new ContainerLifecycleEvent($container));
@@ -61,12 +65,16 @@ class EventAwareClient implements ClientInterface
 
         $this->validateEvent($preEvent);
 
-        $container = $preEvent->annotationExists() ? $preEvent->getAnnotation() : $args ? $action($idOrContainer, ...$args) : $action($idOrContainer);
+        $annotation = $preEvent->annotationExists() ? $preEvent->getAnnotation() : ($args ? $action($idOrContainer, ...$args) : $action($idOrContainer));
+
+        if ($preEvent->isPostProcessPrevented()) {
+            return $annotation;
+        }
 
         /** @var AnnotationLifecycleEvent $postEvent */
-        $postEvent = $this->ev->dispatch($after, new AnnotationLifecycleEvent($container));
+        $postEvent = $this->ev->dispatch($after, new AnnotationLifecycleEvent($annotation));
 
-        return $postEvent->annotationExists() ? $postEvent->getAnnotation() : $container;
+        return $postEvent->annotationExists() ? $postEvent->getAnnotation() : $annotation;
     }
 
     public function getContainer($idOrContainer): Container
@@ -141,10 +149,11 @@ class EventAwareClient implements ClientInterface
                 $call = $this->client->deleteAnnotation($annotation);
             }
         );
+
         return $call;
     }
 
-    public function performSearch(SearchQuery $query) : ResponseInterface
+    public function performSearch(SearchQuery $query): ResponseInterface
     {
         return $this->client->performSearch($query);
     }
@@ -180,6 +189,7 @@ class EventAwareClient implements ClientInterface
                 $call = $this->client->deleteContainer($container);
             }
         );
+
         return $call;
     }
 }

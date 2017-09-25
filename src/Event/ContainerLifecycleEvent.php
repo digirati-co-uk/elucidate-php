@@ -29,12 +29,13 @@ class ContainerLifecycleEvent extends ElucidateEvent
     public function setContainer(Container $container)
     {
         $this->setArgument('container', $container);
+
         return $this;
     }
 
     public function containerExists(): bool
     {
-        return !!$this->hasArgument('container');
+        return (bool) $this->hasArgument('container');
     }
 
     public function getContainer(): Container

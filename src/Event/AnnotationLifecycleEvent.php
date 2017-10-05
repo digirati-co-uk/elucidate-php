@@ -33,14 +33,39 @@ class AnnotationLifecycleEvent extends ElucidateEvent
         return $this;
     }
 
+    public function markAsModified()
+    {
+        $this->setArgument('markAsModified', true);
+    }
+
+    public function isModified()
+    {
+        if ($this->hasArgument('markAsModified')) {
+            return $this->getArgument('markAsModified');
+        }
+        return false;
+    }
+
     public function annotationExists(): bool
     {
-        return (bool) $this->hasArgument('annotation');
+        return $this->hasArgument('annotation');
     }
 
     public function getAnnotation(): Annotation
     {
         return $this->getArgument('annotation');
+    }
+
+    public function getLatestAnnotation()
+    {
+        if ($this->annotationExists()) {
+            return $this->getAnnotation();
+        }
+        $annotation = $this->getSubject();
+        if ($annotation instanceof Annotation) {
+            return $annotation;
+        }
+        return null;
     }
 
     public static function supports($subject): bool

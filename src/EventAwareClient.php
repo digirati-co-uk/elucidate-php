@@ -32,6 +32,9 @@ class EventAwareClient implements ClientInterface
         );
     }
 
+    /**
+     * @throws ElucidateUncaughtException
+     */
     private function containerLifecycle($idOrContainer, string $before, string $after, callable $action, ...$args)
     {
         /** @var ContainerLifecycleEvent $preEvent */
@@ -39,7 +42,13 @@ class EventAwareClient implements ClientInterface
 
         $this->validateEvent($preEvent);
 
-        $container = $preEvent->containerExists() ? $preEvent->getContainer() : ($args ? $action($idOrContainer, ...$args) : $action($idOrContainer));
+
+        $container = $preEvent->containerExists() ? $preEvent->getContainer() : $idOrContainer;
+
+        // Add the annotation if its modified or if the annotation has been crated yet.
+        if ($preEvent->isModified() ||  $preEvent->containerExists() === false) {
+            $container = ($args ? $action($container, ...$args) : $action($container));
+        }
 
         if ($preEvent->isPostProcessPrevented()) {
             return $container;
@@ -51,6 +60,7 @@ class EventAwareClient implements ClientInterface
         return $postEvent->containerExists() ? $postEvent->getContainer() : $container;
     }
 
+    /** @throws ElucidateUncaughtException */
     private function validateEvent(ElucidateEvent $preEvent)
     {
         if ($preEvent->isPropagationStopped() && $preEvent->isValid() === false) {
@@ -58,6 +68,7 @@ class EventAwareClient implements ClientInterface
         }
     }
 
+    /** @throws ElucidateUncaughtException */
     private function annotationLifecycle($idOrContainer, string $before, string $after, callable $action, ...$args)
     {
         /** @var AnnotationLifecycleEvent $preEvent */
@@ -65,7 +76,12 @@ class EventAwareClient implements ClientInterface
 
         $this->validateEvent($preEvent);
 
-        $annotation = $preEvent->annotationExists() ? $preEvent->getAnnotation() : ($args ? $action($idOrContainer, ...$args) : $action($idOrContainer));
+        $annotation = $preEvent->annotationExists() ? $preEvent->getAnnotation() : $idOrContainer;
+
+        // Add the annotation if its modified or if the annotation has been crated yet.
+        if ($preEvent->isModified() ||  $preEvent->annotationExists() === false) {
+            $annotation = ($args ? $action($annotation, ...$args) : $action($annotation));
+        }
 
         if ($preEvent->isPostProcessPrevented()) {
             return $annotation;
@@ -77,6 +93,7 @@ class EventAwareClient implements ClientInterface
         return $postEvent->annotationExists() ? $postEvent->getAnnotation() : $annotation;
     }
 
+    /** @throws ElucidateUncaughtException */
     public function getContainer($idOrContainer): Container
     {
         return $this->containerLifecycle(
@@ -89,6 +106,7 @@ class EventAwareClient implements ClientInterface
         );
     }
 
+    /** @throws ElucidateUncaughtException */
     public function createContainer(Container $container): Container
     {
         return $this->containerLifecycle(
@@ -101,6 +119,7 @@ class EventAwareClient implements ClientInterface
         );
     }
 
+    /** @throws ElucidateUncaughtException */
     public function getAnnotation($container, $annotation): Annotation
     {
         return $this->annotationLifecycle(
@@ -114,6 +133,7 @@ class EventAwareClient implements ClientInterface
         );
     }
 
+    /** @throws ElucidateUncaughtException */
     public function createAnnotation(Annotation $annotation): Annotation
     {
         return $this->annotationLifecycle(
@@ -126,6 +146,7 @@ class EventAwareClient implements ClientInterface
         );
     }
 
+    /** @throws ElucidateUncaughtException */
     public function updateAnnotation(Annotation $annotation): Annotation
     {
         return $this->annotationLifecycle(
@@ -138,6 +159,7 @@ class EventAwareClient implements ClientInterface
         );
     }
 
+    /** @throws ElucidateUncaughtException */
     public function deleteAnnotation(Annotation $annotation)
     {
         $call = false;
@@ -166,6 +188,7 @@ class EventAwareClient implements ClientInterface
         return $this->client->search($query);
     }
 
+    /** @throws ElucidateUncaughtException */
     public function updateContainer(Container $container): Container
     {
         return $this->containerLifecycle(
@@ -178,6 +201,7 @@ class EventAwareClient implements ClientInterface
         );
     }
 
+    /** @throws ElucidateUncaughtException */
     public function deleteContainer(Container $container)
     {
         $call = false;

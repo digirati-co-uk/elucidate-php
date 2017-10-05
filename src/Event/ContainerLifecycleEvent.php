@@ -26,6 +26,19 @@ class ContainerLifecycleEvent extends ElucidateEvent
         return 'container';
     }
 
+    public function markAsModified()
+    {
+        $this->setArgument('markAsModified', true);
+    }
+
+    public function isModified()
+    {
+        if ($this->hasArgument('markAsModified')) {
+            return $this->getArgument('markAsModified');
+        }
+        return false;
+    }
+
     public function setContainer(Container $container)
     {
         $this->setArgument('container', $container);
@@ -35,7 +48,7 @@ class ContainerLifecycleEvent extends ElucidateEvent
 
     public function containerExists(): bool
     {
-        return (bool) $this->hasArgument('container');
+        return $this->hasArgument('container');
     }
 
     public function getContainer(): Container

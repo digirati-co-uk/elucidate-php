@@ -385,6 +385,55 @@ class EventAwareClientTest extends TestCase
         $create->assertWasNotCalled();
     }
 
+    public function test_post_can_be_replaced_and_continued()
+    {
+        $this->http->setPost($post = new WasCalled('post', function ($endpoint, $request) {
+            $this->assertEquals('http://example.org/w3c/123/', $endpoint);
+            $this->assertEquals('I was changed!', $request['body']['value']);
+            return '{
+              "@context": "http://www.w3.org/ns/anno.jsonld",
+              "id": "http://example.org/w3c/123/456",
+              "type": "Annotation",
+              "body": {
+                "type": "TextualBody",
+                "value": "I like this page!"
+              },
+              "target": "http://www.example.com/index.html"
+            }';
+        }));
+        $this->ev->addListener(
+            AnnotationLifecycleEvent::CREATE,
+            $create = new WasCalled('annotationListener')
+        );
+        $this->ev->addListener(
+            AnnotationLifecycleEvent::PRE_CREATE,
+            $preCreate = new WasCalled('annotationListener', function (AnnotationLifecycleEvent $e) {
+                $annotation = $e->getLatestAnnotation();
+                if ($annotation) {
+                    $e->setAnnotation($annotation->changeBody([
+                        'value' => 'I was changed!'
+                    ]));
+                    $e->markAsModified();
+                }
+                $this->assertTrue($e->annotationExists());
+            })
+        );
+
+        $annotation = new Annotation(null, [
+            'type' => 'TextualBody',
+            'value' => 'I like this page! Updated',
+        ], 'http://www.example.com/index.html');
+        $annotation->withContainer('http://example.org/w3c/123');
+
+        $newAnnotation = $this->client->createAnnotation($annotation);
+
+        $this->assertEquals($newAnnotation['id'], 'http://example.org/w3c/123/456');
+
+        $preCreate->assertWasCalledExactly(1);
+        $preCreate->assertWasCalledExactly(1);
+        $post->assertWasCalledExactly(1);
+    }
+
     public function test_delete_annotation()
     {
         $this->http->setDelete(function ($endpoint) {

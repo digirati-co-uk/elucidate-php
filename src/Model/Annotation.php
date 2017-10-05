@@ -22,6 +22,12 @@ class Annotation implements RequestModel, ResponseModel, ArrayAccessInterface
         return $this->container;
     }
 
+    public function changeBody(array $body) {
+        $that = clone $this;
+        $that->body = $body;
+        return $that;
+    }
+
     public function __construct(
         string $id = null,
         $body = null,

@@ -48,7 +48,7 @@ class ContainerLifecycleEvent extends ElucidateEvent
 
     public function containerExists(): bool
     {
-        return (bool)$this->hasArgument('container');
+        return $this->hasArgument('container');
     }
 
     public function getContainer(): Container

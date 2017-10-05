@@ -48,7 +48,7 @@ class AnnotationLifecycleEvent extends ElucidateEvent
 
     public function annotationExists(): bool
     {
-        return (bool) $this->hasArgument('annotation');
+        return $this->hasArgument('annotation');
     }
 
     public function getAnnotation(): Annotation

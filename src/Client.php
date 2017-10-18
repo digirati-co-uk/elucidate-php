@@ -30,6 +30,15 @@ class Client implements ClientInterface
 
     public function createContainer(Container $container): Container
     {
+        if ($container['id']) {
+            $setHeaders = $container->getHeaders();
+            $container->setHeaders(
+                array_merge($setHeaders, [
+                    'Slug' => $container['id']
+                ])
+            );
+        }
+
         return Container::fromResponse(
             $this->client->post($this->client->getBaseUri(), $container)
         );

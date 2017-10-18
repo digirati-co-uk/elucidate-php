@@ -16,6 +16,7 @@ class Annotation implements RequestModel, ResponseModel, ArrayAccessInterface
     private $target;
     private $id;
     private $container;
+    private $toStringTransformer;
 
     public function getContainer()
     {
@@ -25,6 +26,16 @@ class Annotation implements RequestModel, ResponseModel, ArrayAccessInterface
     public function changeBody(array $body) {
         $that = clone $this;
         $that->body = $body;
+        return $that;
+    }
+
+    public function withRelativeId(string $replacementId = null): Annotation
+    {
+        if (!$this->id) {
+            return $this;
+        }
+        $that = clone $this;
+        $that->id = $replacementId ? $replacementId : implode('/', array_slice(explode('/', $this->id), -2, 2));
         return $that;
     }
 
@@ -41,8 +52,19 @@ class Annotation implements RequestModel, ResponseModel, ArrayAccessInterface
         $this->container = $container;
     }
 
+    /** @internal */
+    public function setToStringTransformer(callable $toStringTransformer)
+    {
+        $this->toStringTransformer = $toStringTransformer;
+        return $this;
+    }
+
     public function __toString()
     {
-        return substr($this->id, -1) === '/' ? $this->id : $this->id.'/';
+        if ($this->toStringTransformer) {
+            $toStringTransformer = $this->toStringTransformer;
+            return $toStringTransformer($this->id, $this);
+        }
+        return $this->id;
     }
 }

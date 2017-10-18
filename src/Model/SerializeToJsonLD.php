@@ -16,6 +16,7 @@ trait SerializeToJsonLD
         unset($json['metaData']);
         unset($json['container']);
         unset($json['httpInternalHeaders']);
+        unset($json['toStringTransformer']);
         $json['@context'] = $this->getContext();
         // Add metaData.
         if (isset($this->metaData)) {
@@ -53,7 +54,7 @@ trait SerializeToJsonLD
     public static function fromJson(string $json)
     {
         $data = json_decode($json, true);
-        if (isset($data['errors'])) {
+        if (isset($data['errors']) || is_bool($data)) {
             return null;
         }
 

@@ -58,6 +58,34 @@ class EventAwareClientTest extends TestCase
         $this->assertEquals('http://example.org/w3c/123', $container['id']);
     }
 
+    public function test_can_create_container_with_id()
+    {
+        $this->http->setPost(function ($endpoint, $request) {
+            $headers = $request->getHeaders();
+            $this->assertEquals('test-id-123', $headers['Slug']);
+
+            return '{
+            "label": "my new container",
+            "type": [
+                "BasicContainer",
+                "AnnotationCollection"
+            ],
+            "id": "http://example.org/w3c/123",
+            "@context": [
+                "http:\/\/www.w3.org\/ns\/anno.jsonld",
+                "http:\/\/www.w3.org\/ns\/ldp.jsonld"
+            ]
+        }';
+        });
+
+        // Actual test.
+        $container = $this->client->createContainer(
+            new Container('my new container', 'test-id-123')
+        );
+
+        $this->assertEquals('http://example.org/w3c/123', $container['id']);
+    }
+
     public function test_can_create_container_with_change_at_create()
     {
         $this->http->setPost(function ($endpoint) {

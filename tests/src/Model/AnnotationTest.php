@@ -120,4 +120,26 @@ class AnnotationTest extends PHPUnit_Framework_TestCase
 
         $this->assertNull($annotation);
     }
+
+    public function test_annotation_can_be_change_into_relative_version()
+    {
+        $json = '{
+            "@context": [
+              "http:\/\/www.w3.org\/ns\/anno.jsonld",
+              "http:\/\/www.w3.org\/ns\/ldp.jsonld"
+            ],
+            "type": "Annotation",
+            "body": null,
+            "id": "http://server.com/w3c/annotation/CONTAINERID123/ANNOTATIONID123",
+            "target": "http:\/\/www.example.com\/index.html"
+        }';
+
+        $annotation = Annotation::fromJson($json);
+
+        $relativeAnnotation = $annotation->withRelativeId();
+        $this->assertEquals('CONTAINERID123/ANNOTATIONID123', $relativeAnnotation['id']);
+
+        $relativeAnnotation = $annotation->withRelativeId('CUSTOM_ID_I_PARSED');
+        $this->assertEquals('CUSTOM_ID_I_PARSED', $relativeAnnotation['id']);
+    }
 }

@@ -28,6 +28,16 @@ class Annotation implements RequestModel, ResponseModel, ArrayAccessInterface
         return $that;
     }
 
+    public function withRelativeId(string $replacementId = null): Annotation
+    {
+        if (!$this->id) {
+            return $this;
+        }
+        $that = clone $this;
+        $that->id = $replacementId ? $replacementId : implode('/', array_slice(explode('/', $this->id), -2, 2));
+        return $that;
+    }
+
     public function __construct(
         string $id = null,
         $body = null,

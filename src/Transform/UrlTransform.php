@@ -38,7 +38,9 @@ class UrlTransform
             $fields['via'] = $this->transformUri($annotation['via']);
         }
 
-        return Annotation::fromArray($fields);
+        return (Annotation::fromArray($fields))
+            ->withContainer($annotation->getContainer())
+            ->setHeaders($annotation->getHeaders());
     }
 
     public function transformContainer(Container $container): Container

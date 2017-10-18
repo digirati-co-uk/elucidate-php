@@ -139,7 +139,7 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function test_put_annotation()
     {
         $this->http->setPut(function ($endpoint, $annotation) {
-            $this->assertEquals('http://example.org/w3c/123/456/', $endpoint);
+            $this->assertEquals('http://example.org/w3c/123/456', $endpoint);
 
             return json_encode($annotation);
         });
@@ -161,7 +161,7 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function test_delete_annotation()
     {
         $this->http->setDelete(function ($endpoint) {
-            $this->assertEquals('http://example.org/w3c/123/456/', $endpoint);
+            $this->assertEquals('http://example.org/w3c/123/456', $endpoint);
 
             return true;
         });
@@ -183,13 +183,13 @@ class ClientTest extends PHPUnit_Framework_TestCase
 
             return '{}';
         });
-        $this->client->search(new SearchByBody(['id'], 'http://www.example.com/index.html'));
+        $this->client->performSearch(new SearchByBody(['id'], 'http://www.example.com/index.html'));
 
         $this->http->setGet(function ($endpoint) {
             $this->assertEquals('services/search/target?fields=source&value=http%3A%2F%2Fwww.example.com%2Findex.html&strict=0&xyhw=10%2C10%2C10%2C10&t=1', $endpoint);
 
             return '{}';
         });
-        $this->client->search(new SearchByTarget(['source'], 'http://www.example.com/index.html', false, '10,10,10,10', '1'));
+        $this->client->performSearch(new SearchByTarget(['source'], 'http://www.example.com/index.html', false, '10,10,10,10', '1'));
     }
 }

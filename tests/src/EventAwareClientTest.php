@@ -286,7 +286,7 @@ class EventAwareClientTest extends TestCase
     public function test_put_annotation()
     {
         $this->http->setPut(function ($endpoint, $annotation) {
-            $this->assertEquals('http://example.org/w3c/123/456/', $endpoint);
+            $this->assertEquals('http://example.org/w3c/123/456', $endpoint);
 
             return json_encode($annotation);
         });
@@ -437,7 +437,7 @@ class EventAwareClientTest extends TestCase
     public function test_delete_annotation()
     {
         $this->http->setDelete(function ($endpoint) {
-            $this->assertEquals('http://example.org/w3c/123/456/', $endpoint);
+            $this->assertEquals('http://example.org/w3c/123/456', $endpoint);
 
             return true;
         });

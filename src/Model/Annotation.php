@@ -16,6 +16,7 @@ class Annotation implements RequestModel, ResponseModel, ArrayAccessInterface
     private $target;
     private $id;
     private $container;
+    private $toStringTransformer;
 
     public function getContainer()
     {
@@ -51,8 +52,19 @@ class Annotation implements RequestModel, ResponseModel, ArrayAccessInterface
         $this->container = $container;
     }
 
+    /** @internal */
+    public function setToStringTransformer(callable $toStringTransformer)
+    {
+        $this->toStringTransformer = $toStringTransformer;
+        return $this;
+    }
+
     public function __toString()
     {
-        return substr($this->id, -1) === '/' ? $this->id : $this->id.'/';
+        if ($this->toStringTransformer) {
+            $toStringTransformer = $this->toStringTransformer;
+            return $toStringTransformer($this->id, $this);
+        }
+        return $this->id;
     }
 }

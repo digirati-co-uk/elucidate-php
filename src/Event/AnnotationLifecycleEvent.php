@@ -43,6 +43,7 @@ class AnnotationLifecycleEvent extends ElucidateEvent
         if ($this->hasArgument('markAsModified')) {
             return $this->getArgument('markAsModified');
         }
+
         return false;
     }
 
@@ -65,6 +66,7 @@ class AnnotationLifecycleEvent extends ElucidateEvent
         if ($annotation instanceof Annotation) {
             return $annotation;
         }
+
         return null;
     }
 

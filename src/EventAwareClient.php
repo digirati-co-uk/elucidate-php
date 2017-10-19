@@ -42,11 +42,10 @@ class EventAwareClient implements ClientInterface
 
         $this->validateEvent($preEvent);
 
-
         $container = $preEvent->containerExists() ? $preEvent->getContainer() : $idOrContainer;
 
         // Add the annotation if its modified or if the annotation has been crated yet.
-        if ($preEvent->isModified() ||  $preEvent->containerExists() === false) {
+        if ($preEvent->isModified() || $preEvent->containerExists() === false) {
             $container = ($args ? $action($container, ...$args) : $action($container));
         }
 
@@ -79,7 +78,7 @@ class EventAwareClient implements ClientInterface
         $annotation = $preEvent->annotationExists() ? $preEvent->getAnnotation() : $idOrContainer;
 
         // Add the annotation if its modified or if the annotation has been crated yet.
-        if ($preEvent->isModified() ||  $preEvent->annotationExists() === false) {
+        if ($preEvent->isModified() || $preEvent->annotationExists() === false) {
             $annotation = ($args ? $action($annotation, ...$args) : $action($annotation));
         }
 

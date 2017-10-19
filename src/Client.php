@@ -21,6 +21,9 @@ class Client implements ClientInterface
 
     public function getContainer($idOrContainer): Container
     {
+        if ($idOrContainer instanceof Container) {
+            $idOrContainer = $idOrContainer->withRelativeId();
+        }
         $id = substr($idOrContainer, -1, 1) === '/' ? (string) $idOrContainer : $idOrContainer.'/';
 
         return Container::fromResponse(
@@ -34,7 +37,7 @@ class Client implements ClientInterface
             $setHeaders = $container->getHeaders();
             $container->setHeaders(
                 array_merge($setHeaders, [
-                    'Slug' => $container['id']
+                    'Slug' => $container['id'],
                 ])
             );
         }
@@ -47,17 +50,20 @@ class Client implements ClientInterface
     public function updateContainer(Container $container): Container
     {
         return Container::fromResponse(
-            $this->client->put($container, $container)
+            $this->client->put($container->withRelativeId(), $container)
         );
     }
 
     public function deleteContainer(Container $container)
     {
-        return $this->client->delete($container);
+        return $this->client->delete($container->withRelativeId());
     }
 
     public function getAnnotation($container, $annotation): Annotation
     {
+        if ($container instanceof Container) {
+            $container = $container->withRelativeId();
+        }
         if ($annotation instanceof Annotation && $annotation->getContainer() === null) {
             $annotation->withContainer($container);
         }
@@ -78,7 +84,7 @@ class Client implements ClientInterface
         }
 
         return Annotation::fromResponse(
-            $this->client->post($container.'/', $annotation)
+            $this->client->post($container->withRelativeId().'/', $annotation)
         )->withContainer($container);
     }
 
@@ -90,13 +96,13 @@ class Client implements ClientInterface
         }
 
         return Annotation::fromResponse(
-            $this->client->put($annotation, $annotation)
+            $this->client->put($annotation->withRelativeId(), $annotation)
         )->withContainer($container);
     }
 
     public function deleteAnnotation(Annotation $annotation)
     {
-        return $this->client->delete($annotation);
+        return $this->client->delete($annotation->withRelativeId());
     }
 
     /**

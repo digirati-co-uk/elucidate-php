@@ -36,6 +36,7 @@ class ContainerLifecycleEvent extends ElucidateEvent
         if ($this->hasArgument('markAsModified')) {
             return $this->getArgument('markAsModified');
         }
+
         return false;
     }
 

@@ -2342,6 +2342,8 @@
     "partOf": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/",
     "startIndex": 0
   },
+  "next": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/?page=1&desc=1",
+  "prev": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/?page=0&desc=1",
   "last": "https:\/\/elucidate.dlcs-ida.org\/annotation\/w3c\/0fe60b581d19c5c8203e3ec8870d196a\/?page=0&desc=1",
   "total": 69
 }

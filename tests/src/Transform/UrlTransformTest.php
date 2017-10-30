@@ -44,6 +44,9 @@ class UrlTransformTest extends TestCase
         $newContainer = $transform($container);
 
         $this->assertEquals($newContainer['id'], 'https://yahoo.com/annotation/w3c/0fe60b581d19c5c8203e3ec8870d196a/');
+        $this->assertEquals($newContainer['next'], 'https://yahoo.com/annotation/w3c/0fe60b581d19c5c8203e3ec8870d196a/?page=1&desc=1');
+        $this->assertEquals($newContainer['prev'], 'https://yahoo.com/annotation/w3c/0fe60b581d19c5c8203e3ec8870d196a/?page=0&desc=1');
+        $this->assertEquals($newContainer['last'], 'https://yahoo.com/annotation/w3c/0fe60b581d19c5c8203e3ec8870d196a/?page=0&desc=1');
 
         $this->assertFalse(strpos(json_encode($newContainer), 'elucidate'));
     }

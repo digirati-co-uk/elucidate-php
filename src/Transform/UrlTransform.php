@@ -68,6 +68,16 @@ class UrlTransform
             $fields['last'] = $this->transformUri($container['last']);
         }
 
+        // JSON.next
+        if (isset($fields['next'])) {
+            $fields['next'] = $this->transformUri($container['next']);
+        }
+
+        // JSON.prev
+        if (isset($fields['prev'])) {
+            $fields['prev'] = $this->transformUri($container['prev']);
+        }
+
         return Container::fromArray($fields);
     }
 

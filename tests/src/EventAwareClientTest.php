@@ -122,7 +122,7 @@ class EventAwareClientTest extends TestCase
         $wasCalled->assertWasCalledExactly(1);
     }
 
-    public function test_can_get_container()
+    public function test_can_get_container_with_string()
     {
         $this->http->setGet(function ($endpoint) {
             $this->assertEquals('http://example.org/w3c/123/', $endpoint);
@@ -147,6 +147,33 @@ class EventAwareClientTest extends TestCase
         // Actual test.
         $container = $this->client->getContainer('http://example.org/w3c/123');
         $this->assertEquals('http://example.org/w3c/123', $container['id']);
+    }
+
+    public function test_can_get_container()
+    {
+        $this->http->setGet(function ($endpoint) {
+            $this->assertEquals('123/', $endpoint);
+
+            return '{
+            "label": "my new container",
+            "type": [
+                "BasicContainer",
+                "AnnotationCollection"
+            ],
+            "id": "http://example.org/w3c/123",
+            "@context": [
+                "http:\/\/www.w3.org\/ns\/anno.jsonld",
+                "http:\/\/www.w3.org\/ns\/ldp.jsonld"
+            ]
+        }';
+        });
+
+        $this->ev->addListener(ContainerLifecycleEvent::PRE_READ, $preRead = new WasCalled(ContainerLifecycleEvent::PRE_READ));
+        $this->ev->addListener(ContainerLifecycleEvent::READ, $read = new WasCalled(ContainerLifecycleEvent::READ));
+
+        // Actual test.
+//        $container = $this->client->getContainer('http://example.org/w3c/123');
+//        $this->assertEquals('http://example.org/w3c/123', $container['id']);
 
         $container = $this->client->getContainer(new Container('my new container', 'http://example.org/w3c/123'));
         $this->assertEquals('http://example.org/w3c/123', $container['id']);
@@ -188,8 +215,8 @@ class EventAwareClientTest extends TestCase
         $this->assertEquals('http://from.event/123', $container['id']);
         $listener->assertWasCalled();
 
-        $preRead->assertWasCalledExactly(6);
-        $read->assertWasCalledExactly(6);
+        $preRead->assertWasCalledExactly(5);
+        $read->assertWasCalledExactly(5);
     }
 
     public function test_get_annotation()
@@ -240,7 +267,7 @@ class EventAwareClientTest extends TestCase
     public function test_create_annotation()
     {
         $this->http->setPost(function ($endpoint) {
-            $this->assertEquals('http://example.org/w3c/123/', $endpoint);
+            $this->assertEquals('123/', $endpoint);
 
             return '{
               "@context": "http://www.w3.org/ns/anno.jsonld",
@@ -278,7 +305,7 @@ class EventAwareClientTest extends TestCase
     public function test_create_annotation_with_event_mutation()
     {
         $this->http->setPost(function ($endpoint, Annotation $annotation) {
-            $this->assertEquals('http://example.org/w3c/123/', $endpoint);
+            $this->assertEquals('123/', $endpoint);
             $json = $annotation->jsonSerialize();
             $this->assertEquals($json['findMe'], 'custom meta data');
 
@@ -319,7 +346,7 @@ class EventAwareClientTest extends TestCase
     public function test_put_annotation()
     {
         $this->http->setPut(function ($endpoint, $annotation) {
-            $this->assertEquals('http://example.org/w3c/123/456', $endpoint);
+            $this->assertEquals('123/456', $endpoint);
 
             return json_encode($annotation);
         });
@@ -421,8 +448,9 @@ class EventAwareClientTest extends TestCase
     public function test_post_can_be_replaced_and_continued()
     {
         $this->http->setPost($post = new WasCalled('post', function ($endpoint, $request) {
-            $this->assertEquals('http://example.org/w3c/123/', $endpoint);
+            $this->assertEquals('123/', $endpoint);
             $this->assertEquals('I was changed!', $request['body']['value']);
+
             return '{
               "@context": "http://www.w3.org/ns/anno.jsonld",
               "id": "http://example.org/w3c/123/456",
@@ -444,7 +472,7 @@ class EventAwareClientTest extends TestCase
                 $annotation = $e->getLatestAnnotation();
                 if ($annotation) {
                     $e->setAnnotation($annotation->changeBody([
-                        'value' => 'I was changed!'
+                        'value' => 'I was changed!',
                     ]));
                     $e->markAsModified();
                 }
@@ -461,6 +489,8 @@ class EventAwareClientTest extends TestCase
         $newAnnotation = $this->client->createAnnotation($annotation);
 
         $this->assertEquals($newAnnotation['id'], 'http://example.org/w3c/123/456');
+        $this->assertEquals((string) $newAnnotation, 'http://example.org/w3c/123/456');
+        $this->assertEquals((string) $newAnnotation->withRelativeId(), '123/456');
 
         $preCreate->assertWasCalledExactly(1);
         $preCreate->assertWasCalledExactly(1);
@@ -470,7 +500,7 @@ class EventAwareClientTest extends TestCase
     public function test_delete_annotation()
     {
         $this->http->setDelete(function ($endpoint) {
-            $this->assertEquals('http://example.org/w3c/123/456', $endpoint);
+            $this->assertEquals('123/456', (string) $endpoint);
 
             return true;
         });

@@ -21,7 +21,7 @@ class UrlTransformTest extends TestCase
     public function test_url_transform_basic_annotation_with_headers()
     {
         $annotation = new Annotation('http://google.com/123/456');
-        $annotation->setHeaders([ 'X-Find-Me' => 'expected value']);
+        $annotation->setHeaders(['X-Find-Me' => 'expected value']);
 
         $transform = new UrlTransform('https://yahoo.com');
 

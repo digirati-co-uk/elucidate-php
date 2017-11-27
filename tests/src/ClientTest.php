@@ -53,7 +53,7 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function test_can_get_container()
     {
         $this->http->setGet(function ($endpoint) {
-            $this->assertEquals('http://example.org/w3c/123/', $endpoint);
+            $this->assertEquals('123/', $endpoint);
 
             return '{
             "label": "my new container",
@@ -68,10 +68,6 @@ class ClientTest extends PHPUnit_Framework_TestCase
             ]
         }';
         });
-
-        // Actual test.
-        $container = $this->client->getContainer('http://example.org/w3c/123');
-        $this->assertEquals('http://example.org/w3c/123', $container['id']);
 
         $container = $this->client->getContainer(new Container('my new container', 'http://example.org/w3c/123'));
         $this->assertEquals('http://example.org/w3c/123', $container['id']);
@@ -111,7 +107,7 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function test_create_annotation()
     {
         $this->http->setPost(function ($endpoint) {
-            $this->assertEquals('http://example.org/w3c/123/', $endpoint);
+            $this->assertEquals('123/', $endpoint);
 
             return '{
               "@context": "http://www.w3.org/ns/anno.jsonld",
@@ -139,7 +135,7 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function test_put_annotation()
     {
         $this->http->setPut(function ($endpoint, $annotation) {
-            $this->assertEquals('http://example.org/w3c/123/456', $endpoint);
+            $this->assertEquals('123/456', $endpoint);
 
             return json_encode($annotation);
         });
@@ -161,7 +157,7 @@ class ClientTest extends PHPUnit_Framework_TestCase
     public function test_delete_annotation()
     {
         $this->http->setDelete(function ($endpoint) {
-            $this->assertEquals('http://example.org/w3c/123/456', $endpoint);
+            $this->assertEquals('123/456', (string) $endpoint);
 
             return true;
         });

@@ -105,6 +105,30 @@ class UrlTransformTest extends TestCase
         $containerJson = file_get_contents(__DIR__.'/container.json');
         $container = Container::fromJson($containerJson);
         $container->setHeaders([
+            'Location' => false,
+            'X-Find-Me' => 'expected value',
+        ]);
+
+        $transform = new UrlTransform('https://yahoo.com');
+        $newContainer = $transform($container);
+
+        $headers = $newContainer->getHeaders();
+
+        $this->assertEquals($headers, [
+            'Location' => false, // Remains untouched.
+            'Accept' => 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"',
+            'Content-Type' => 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"',
+            'X-Find-Me' => 'expected value',
+        ]);
+
+        $this->assertFalse(strpos(json_encode($newContainer), 'elucidate'));
+    }
+
+    public function test_url_transform_full_container_location_invalid_array()
+    {
+        $containerJson = file_get_contents(__DIR__.'/container.json');
+        $container = Container::fromJson($containerJson);
+        $container->setHeaders([
             'Location' => [false],
             'X-Find-Me' => 'expected value',
         ]);

@@ -50,4 +50,28 @@ class UrlTransformTest extends TestCase
 
         $this->assertFalse(strpos(json_encode($newContainer), 'elucidate'));
     }
+
+    public function test_url_transform_full_container_location()
+    {
+        $containerJson = file_get_contents(__DIR__.'/container.json');
+        $container = Container::fromJson($containerJson);
+        $container->setHeaders([
+            'Location' => 'http://elucidate.com/annotation/w3c/0fe60b581d19c5c8203e3ec8870d196a/',
+            'X-Find-Me' => 'expected value',
+        ]);
+
+        $transform = new UrlTransform('https://yahoo.com');
+        $newContainer = $transform($container);
+
+        $headers = $newContainer->getHeaders();
+
+        $this->assertEquals($headers, [
+            'Location' => 'https://yahoo.com/annotation/w3c/0fe60b581d19c5c8203e3ec8870d196a/',
+            'Accept' => 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"',
+            'Content-Type' => 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"',
+            'X-Find-Me' => 'expected value',
+        ]);
+
+        $this->assertFalse(strpos(json_encode($newContainer), 'elucidate'));
+    }
 }

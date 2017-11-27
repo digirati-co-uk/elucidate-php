@@ -158,6 +158,11 @@ class EventAwareClientTest extends TestCase
         $container = $this->client->getContainer(new Container(null, 'http://example.org/w3c/123'));
         $this->assertEquals('my new container', $container['label']);
         $this->assertEquals('http://example.org/w3c/123', $container['id']);
+        $this->assertEquals([
+            'Accept' => 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"',
+            'Content-Type' => 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"',
+        ], $container->getHeaders());
+        $this->assertEquals([], $container->getInternalHeaders());
 
         $this->ev->addListener(
             ContainerLifecycleEvent::READ,

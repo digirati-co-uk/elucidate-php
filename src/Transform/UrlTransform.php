@@ -78,7 +78,16 @@ class UrlTransform
             $fields['prev'] = $this->transformUri($container['prev']);
         }
 
-        return Container::fromArray($fields);
+        $headers = $container->getHeaders();
+        if (isset($headers['Location'])) {
+            $headers['Location'] = is_array($headers['Location']) ?
+                (is_string($headers['Location'][0]) ? $this->transformUri($headers['Location'][0]) : $headers['Location']) :
+                (is_string($headers['Location']) ? $this->transformUri($headers['Location']) : $headers['Location']);
+        }
+
+
+        return (Container::fromArray($fields))
+            ->setHeaders($headers);
     }
 
     public function __invoke($annotationOrContainer)
@@ -89,6 +98,6 @@ class UrlTransform
         if ($annotationOrContainer instanceof Container) {
             return $this->transformContainer($annotationOrContainer);
         }
-        throw new InvalidArgumentException('Unsupported type in Url Transform: '.get_class($annotationOrContainer));
+        throw new InvalidArgumentException('Unsupported type in Url Transform: ' . get_class($annotationOrContainer));
     }
 }

@@ -63,6 +63,11 @@ class UrlTransform
             $fields['first']['partOf'] = $this->transformUri($container['first']['partOf']);
         }
 
+        // JSON.first.next
+        if (isset($fields['first']['next'])) {
+            $fields['first']['next'] = $this->transformUri($container['first']['next']);
+        }
+
         // JSON.last
         if (isset($fields['last'])) {
             $fields['last'] = $this->transformUri($container['last']);
